@@ -1,9 +1,10 @@
+[#ftl]
 [#escape x as x?html]
 <?xml version="1.0" encoding="iso-8859-1"?>
 <?NLS TYPE="org.eclipse.help.toc"?>
 
 [#-- Setup and do processing: --]
-[#set doc_prefix = "docs"]
+[#assign doc_prefix = "docs"]
 [#visit .node]
 
 [#-- Node handlers: --]
@@ -12,8 +13,8 @@
 
 [#macro item]
 [#compress]  
-  [#set name = .node.@name]
-  [#set url = .node.@url]
+  [#assign name = .node.@name]
+  [#assign url = .node.@url]
 [#-- Replace the manual link with anchor filled in later 
   <#if name="Manual">
 	<topic label="Manual" href="${doc_prefix}/docs/index.html">

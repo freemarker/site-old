@@ -1,6 +1,7 @@
+[#ftl]
 [#import "toc.ftl" as toc]
-[#set poweredbyImage = "poweredby_ffffff.png" in .globals]
-[#set menuBgColor = "#E0E0E0" in .globals] 
+[#global poweredbyImage = "poweredby_ffffff.png"]
+[#global menuBgColor = "#E0E0E0"]
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html lang="en">
