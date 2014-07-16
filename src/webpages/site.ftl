@@ -46,7 +46,9 @@
         (remove the "REMOVEME" from the address)<br>
       </td>
       <td align=right valign=top class="footnote"><font size="1">&nbsp;<br></font>
-        Page last generated: ${properties.timeStamp}<br>
+        [#setting time_zone = "GMT"]
+        [#assign timeStamp = properties.timeStamp?datetime("yyyy-MM-dd HH:mm:ss z")]
+        Page last generated: <time datetime="${timeStamp?iso_utc}" title="${timeStamp?string.full}">${properties.timeStamp}</time><br>
         All content on this page is copyrighted by the FreeMarker project.<br>
         &nbsp;
       </td>
