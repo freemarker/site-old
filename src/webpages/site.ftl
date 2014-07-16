@@ -15,13 +15,17 @@
   <body>
   
     [#-- table of contents --]
-    [#visit project_node using [toc]]
+    <nav class="page-nav" role="navigation">
+      [#visit project_node using [toc]]
+    </nav>
     
     [#-- title --]
     ${.node.page.@title?html}
     
     [#-- content --]
-    [#recurse  using "content.ftl"]
+    <main class="page-main" role="main">
+      [#recurse  using "content.ftl"]
+    </main>
     
     [@hr color="#C0C0C0"/]
     <table border=0 cellspacing=0 cellpadding=0 width="100%">
