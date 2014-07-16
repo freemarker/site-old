@@ -6,14 +6,14 @@
 [#macro @element][#recurse ][/#macro]
 
 [#macro group]
-[#assign title = ""]
+[#local title = ""]
 <tr><td>
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr><td width="100%">
       [#if properties["site.offline"]?? && .node.@offlineName?has_content]
-        [#assign title = .node.@offlineName]
+        [#local title = .node.@offlineName]
       [#else]
-        [#assign title = .node.@name]
+        [#local title = .node.@name]
       [/#if]
       <b>${title?html}</b>
     </td></tr>
@@ -25,14 +25,14 @@
 [/#macro]
 
 [#macro item]
-  [#assign title = ""]
+  [#local title = ""]
   <tr>
     <td align="left" valign="top"><img src="images/bullet_e0e0e0.png" width=7 height=10 alt="-">&nbsp;</td>
     <td width="93%" align="left">
       [#if properties["site.offline"]?? && .node.@offlineName?has_content]
-        [#assign title = .node.@offlineName]
+        [#local title = .node.@offlineName]
       [#else]
-        [#assign title = .node.@name]
+        [#local title = .node.@name]
       [/#if]
       <a class="nav" href="${.node.@url?html}">[#if title?starts_with('#noescape:')]${title?string[10..]}[#else]${title?html}[/#if]</a>
     </td>

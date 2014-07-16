@@ -13,8 +13,8 @@
 
 [#macro item]
 [#compress]  
-  [#assign name = .node.@name]
-  [#assign url = .node.@url]
+  [#local name = .node.@name]
+  [#local url = .node.@url]
 [#-- Replace the manual link with anchor filled in later 
   <#if name="Manual">
 	<topic label="Manual" href="${doc_prefix}/docs/index.html">
