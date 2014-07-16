@@ -27,8 +27,8 @@
       [#-- content --]
       <main class="page-main" role="main">
         [#-- title --]
-        <h1>${.node.page.@title?html}</h1>
-        [#recurse using "content.ftl"]
+        <h1 class="page-title">${.node.page.@title?html}</h1>
+        [#recurse  using "content.ftl"]
       </main>
   
       [#-- footer --]
@@ -42,24 +42,28 @@
 
 [#macro header]
   [#assign logoImage = "logo_e0e0e0.png"]
-  <a href="${deployUrl?html}"><img src="images/${logoImage}" alt="FreeMarker logo"></a>
+  [#--<a href="${deployUrl?html}"><img src="images/${logoImage}" alt="FreeMarker logo"></a>--]
 [/#macro]
 
 
 [#macro footer]
-  Found broken link or other problem with this site?
-  Report to: <a href="mailto:ddekanyREMOVEME@freemail.hu">ddekanyREMOVEME@freemail.hu</a>
-  (remove the "REMOVEME" from the address)
+  <div class="report">
+    Found broken link or other problem with this site?
+    Report to: <a href="mailto:ddekanyREMOVEME@freemail.hu">ddekanyREMOVEME@freemail.hu</a>
+    (remove the "REMOVEME" from the address)
+  </div>
 
   [#setting time_zone = "GMT"]
   [#local timeStamp = properties.timeStamp?datetime("yyyy-MM-dd HH:mm:ss z")]
-  Page last generated: <time datetime="${timeStamp?iso_utc}" title="${timeStamp?string.full}">${properties.timeStamp}</time>
-  All content on this page is copyrighted by the FreeMarker project.
-
-  [#if !properties["site.offline"]??]
-    <a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=794&amp;type=1" alt="SourceForge Logo"></a>
-  [#else]
-    <a href="http://sourceforge.net"><img src="images/sflogo.png" alt="SourceForge Logo"></a>
-  [/#if]
-  <a href="${deployUrl?html}"><img src="images/${poweredbyImage}" alt="Powered by FreeMarker"></a>
+  <div class="copyright">
+    Page last generated: <time datetime="${timeStamp?iso_utc}" title="${timeStamp?string.full}">${properties.timeStamp}</time>
+    All content on this page is copyrighted by the FreeMarker project.
+  
+    [#if !properties["site.offline"]??]
+      <a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=794&amp;type=1" alt="SourceForge Logo"></a>
+    [#else]
+      <a href="http://sourceforge.net"><img src="images/sflogo.png" alt="SourceForge Logo"></a>
+    [/#if]
+    <a href="${deployUrl?html}"><img src="images/${poweredbyImage}" alt="Powered by FreeMarker"></a>
+  </div>
 [/#macro]

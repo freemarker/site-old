@@ -5,8 +5,8 @@
 }
 
 html {
-  font-family: sans-serif;
-  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
   color: #333;
   line-height: 1.5;
   -ms-text-size-adjust: 100%;
@@ -31,6 +31,11 @@ a {
   background: transparent;
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #808080;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* page wrapper */
@@ -45,9 +50,11 @@ a {
   float: left;
   font-size: 12px;
   padding: 10px;
+  width: 20%;
+  font-weight: bold;
 }
 
-.table-of-contents > ul {
+.table-of-contents ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -57,12 +64,54 @@ a {
   margin-top: 10px;
 }
 
-.table-of-contents a {
+.table-of-contents li a {
   display: block;
   font-weight: normal;
+  color: #0050B2;
+  background: url(images/bullet_e0e0e0.png) 0 4px no-repeat;
+  padding-left: 10px;
+}
+
+.table-of-contents li a:hover {
+  text-decoration: underline;
+}
+
+.table-of-contents a.logo {
+  display: block;
+  text-align: center;
 }
 
 /* main */
 .page-main {
   float: left;
+  width: 80%;
+  padding-left: 40px;
+}
+
+.page-main .page-title {
+  color: #0050B2;
+  font-size: 30px;
+  border-bottom: 1px solid #333;
+  text-align: right;
+  margin: 0;
+  line-height: 1;
+}
+
+/* footer */
+.page-footer {
+  border-top: 1px solid #C0C0C0;
+  clear: both;
+  padding-top: 10px;
+}
+
+.page-footer .report {
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+.page-footer .copyright {
+  width: 50%;
+  float: right;
+  text-align: right;
 }
