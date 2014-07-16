@@ -22,6 +22,10 @@ main {
   display: block;
 }
 
+img {
+  border: 0;
+}
+
 a {
   background: transparent;
   text-decoration: none;

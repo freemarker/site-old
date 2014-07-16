@@ -37,7 +37,7 @@
 [/#macro]
 
 [#macro site]
-  <a href="${.node.@deployUrl?html}"><img border="0" src="images/${logoImage}" alt="FreeMarker logo"></a><br>
+  <a href="${.node.@deployUrl?html}"><img src="images/${logoImage}" alt="FreeMarker logo"></a><br>
 
   [#-- navigation groups --]
   [#recurse ]
