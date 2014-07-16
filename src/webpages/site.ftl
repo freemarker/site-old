@@ -13,29 +13,15 @@
     <title>FreeMarker Java Template Engine - ${.node.page.@title?html}</title>
   </head>
   <body>
-    <table border="0" cellspacing="0" cellpadding="0" width="100%">
-      <tr>
-        <td align="left" valign="top" width="20%">
-          [#visit project_node using [toc]]
-        </td>
-        <td align="left" valign="top" width="5%">
-          &nbsp;
-        </td>
-        <td align="left" valign="top" width="72%">
-          <table border="0" cellspacing="0" cellpadding="0" width="100%">
-            [#-- span instead of h1 for Netscape 4.x compatibility... --]
-            <tr><td align="right"><span class="pageTitle">${.node.page.@title?html}</span></td></tr>
-            <tr bgcolor="#000000"><td><img src="images/none.gif" width=1 height=1 hspace="0" vspace="0" border="0" alt=""></td></tr>
-          </table>
-          [#recurse  using "content.ftl"]
-        </td>
-        <td align="left" valign="top" width="3%" rowspan=3>
-          &nbsp;
-        </td>
-      </tr>
-    </table>
-
-    <p>&nbsp;
+  
+    [#-- table of contents --]
+    [#visit project_node using [toc]]
+    
+    [#-- title --]
+    ${.node.page.@title?html}
+    
+    [#-- content --]
+    [#recurse  using "content.ftl"]
     
     [@hr color="#C0C0C0"/]
     <table border=0 cellspacing=0 cellpadding=0 width="100%">
