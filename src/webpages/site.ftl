@@ -2,6 +2,7 @@
 [#import "toc.ftl" as toc]
 [#global poweredbyImage = "poweredby_ffffff.png"]
 [#global menuBgColor = "#E0E0E0"]
+[#global deployUrl = project_node.site.@deployUrl]
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,62 +14,52 @@
     <title>FreeMarker Java Template Engine - ${.node.page.@title?html}</title>
   </head>
   <body>
-  
-    [#-- table of contents --]
-    <nav class="page-nav" role="navigation">
-      [#visit project_node using [toc]]
-    </nav>
-    
-    [#-- title --]
-    ${.node.page.@title?html}
-    
-    [#-- content --]
-    <main class="page-main" role="main">
-      [#recurse  using "content.ftl"]
-    </main>
-    
-    [@hr color="#C0C0C0"/]
-    <table border=0 cellspacing=0 cellpadding=0 width="100%">
-      <tr>
-      <td align=left valign=top class="footnote"><font size="1">&nbsp;<br></font>
-        <b>Found broken link or other problem with this site?</b><br>
-        Report to: <a href="mailto:ddekanyREMOVEME@freemail.hu">ddekanyREMOVEME@freemail.hu</a><br>
-        (remove the "REMOVEME" from the address)<br>
-      </td>
-      <td align=right valign=top class="footnote"><font size="1">&nbsp;<br></font>
-        [#setting time_zone = "GMT"]
-        [#assign timeStamp = properties.timeStamp?datetime("yyyy-MM-dd HH:mm:ss z")]
-        Page last generated: <time datetime="${timeStamp?iso_utc}" title="${timeStamp?string.full}">${properties.timeStamp}</time><br>
-        All content on this page is copyrighted by the FreeMarker project.<br>
-        &nbsp;
-      </td>
-    </table>
+    [#-- header --]
+    <header class="page-header">
+      [@header /]
+    </header>
+    <div class="page-wrapper">
+      [#-- table of contents --]
+      <nav class="table-of-contents" role="navigation">
+        [#visit project_node using [toc]]
+      </nav>
 
-    <table border=0 cellspacing=0 cellpadding=0 width="100%">
-      <tr>
-        <td width="100%">&nbsp;</td>
-        <td valign="middle" align="right">
-          [#if !properties["site.offline"]??]
-            <a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=794&amp;type=1" border="0" alt="SourceForge Logo"></a>
-          [#else]
-            <a href="http://sourceforge.net"><img src="images/sflogo.png" border="0" alt="SourceForge Logo"></a>
-          [/#if]
-        </td>
-        <td>
-          &nbsp;&nbsp;
-        </td>
-        <td valign="middle" align="right">
-          <a href="${project_node.site.@deployUrl?html}"><img src="images/${poweredbyImage}" alt="Powered by FreeMarker" border="0"></a>
-        </td>
-    </table>
+      [#-- content --]
+      <main class="page-main" role="main">
+        [#-- title --]
+        <h1>${.node.page.@title?html}</h1>
+        [#recurse using "content.ftl"]
+      </main>
+  
+      [#-- footer --]
+      <footer class="page-footer" role="contentinfo">
+        [@footer /]
+      </footer>
+    </div>
   </body>
 </html>
 
 
-[#-- Draws a 100% width horizontal line with the given color. Do not use inside another table (IE 5)... --]
-[#macro hr color]
-    <table border=0 cellspacing=0 cellpadding=0 width="100%">
-      <tr><td height=1 bgcolor="${color}"><img src="images/none.gif" width=1 height=1 alt=""></td></tr>
-    </table>
+[#macro header]
+  [#assign logoImage = "logo_e0e0e0.png"]
+  <a href="${deployUrl?html}"><img src="images/${logoImage}" alt="FreeMarker logo"></a>
 [/#macro]
 
+
+[#macro footer]
+  Found broken link or other problem with this site?
+  Report to: <a href="mailto:ddekanyREMOVEME@freemail.hu">ddekanyREMOVEME@freemail.hu</a>
+  (remove the "REMOVEME" from the address)
+
+  [#setting time_zone = "GMT"]
+  [#local timeStamp = properties.timeStamp?datetime("yyyy-MM-dd HH:mm:ss z")]
+  Page last generated: <time datetime="${timeStamp?iso_utc}" title="${timeStamp?string.full}">${properties.timeStamp}</time>
+  All content on this page is copyrighted by the FreeMarker project.
+
+  [#if !properties["site.offline"]??]
+    <a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=794&amp;type=1" alt="SourceForge Logo"></a>
+  [#else]
+    <a href="http://sourceforge.net"><img src="images/sflogo.png" alt="SourceForge Logo"></a>
+  [/#if]
+  <a href="${deployUrl?html}"><img src="images/${poweredbyImage}" alt="Powered by FreeMarker"></a>
+[/#macro]

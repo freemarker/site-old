@@ -1,5 +1,4 @@
 [#ftl]
-[#assign logoImage = "logo_e0e0e0.png"]
 
 [#-- The following macros are used in recursive processing. --]
 
@@ -22,6 +21,7 @@
   </ul>
 [/#macro]
 
+
 [#macro item]
   [#local title = ""]
   [#if properties["site.offline"]?? && .node.@offlineName?has_content]
@@ -35,12 +35,3 @@
   </li>
 
 [/#macro]
-
-[#macro site]
-  <a href="${.node.@deployUrl?html}"><img src="images/${logoImage}" alt="FreeMarker logo"></a><br>
-
-  [#-- navigation groups --]
-  [#recurse ]
-[/#macro]
-
-
