@@ -1,40 +1,29 @@
-BODY {
-  background-color: #ffffff;
-  font-size: 10pt; font-family: Arial, sans-serif;
-  color: #000000
-}
-TABLE {font-size: 10pt; font-family: Arial, sans-serif;} /* Fix Opera 6.x bug */
-P {font-size: 10pt; font-family: Arial, sans-serif;} /* Fix Netscape 4.x bug */
-TD {font-size: 10pt; font-family: Arial, sans-serif;} /* Fix Netscape 4.x bug */
-TH {font-size: 10pt; font-family: Arial, sans-serif;} /* Fix Netscape 4.x bug */
-
-SPAN.pageTitle {
-  font-size: 22pt; font-family: Arial, sans-serif; font-weight: bold;
-  color: #0050B2;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-H2 {
-  font-size: 12pt; font-family: Arial, sans-serif; font-weight: bold; font-style: italic;
-  color: #0050B2;
-  margin-top: 18pt; margin-bottom: 4pt
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-H3 {
-  font-size: 10pt; font-family: Arial, sans-serif; font-weight: normal; font-style: italic;
-  color: #0050B2;
-  margin-top: 12pt; margin-bottom: 0pt
+body {
+  margin: 0;
 }
 
-A{color: #808080; text-decoration:none}
-A:hover{text-decoration: underline}
-A:visited{color: #808080;}
-A.nav {text-decoration: none;  COLOR: #0050B2;}
-A.nav:visited {COLOR: #0050B2;}
-A.nav:hover{text-decoration: underline}
+nav,
+main {
+  display: block;
+}
 
-TD.footnote{font-style: italic; color: #404040}
-
-TH.cell{background-color: #C0C0C0}
-TD.cell{background-color: #E0E0E0}
-
-.warning {color: #B00}
+a {
+  background: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
