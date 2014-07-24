@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 
 <!-- :wrap=soft:maxLineLen=80: -->
@@ -291,7 +291,7 @@
       For more information <a href="docs/pgui_misc_servlet.html">click here...</a></p>
       <resources>
         <resource>
-          <name>Cáñamo</name>
+          <name>CÃ¡Ã±amo</name>
           <url>http://canyamo.sourceforge.net</url>
           <description>
             [Spanish language only.] Canyamo is a framework for creating portals. The main 
@@ -343,7 +343,7 @@
           <url>http://www.springframework.org/</url>
           <description>
           Spring is a complete Java/J2EE application framework based around a
-          lightweight Inversion of Control container.  Spring includes, among many
+          lightweight Inversion of Control container. Â Spring includes, among many
           other things, a full AOP interception framework, JDBC and ORM support, 
           declarative transaction management (even without an application server) and 
           a rich, flexible MVC framework with various view technologies integrated.

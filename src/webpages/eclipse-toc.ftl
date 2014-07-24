@@ -1,6 +1,6 @@
 [#ftl]
 [#escape x as x?html]
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?NLS TYPE="org.eclipse.help.toc"?>
 
 [#-- Setup and do processing: --]

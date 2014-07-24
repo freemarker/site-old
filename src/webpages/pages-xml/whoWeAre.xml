@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <page title="Who We Are">
   <headsection>
     <p>
@@ -28,7 +28,7 @@
       XML mappings, as well as for HTTP servlet, JSP and Ant integration.
     </p>
     <p>
-      Dániel Dékány is the main author and maintainer of the documentation.
+      DÃ¡niel DÃ©kÃ¡ny is the main author and maintainer of the documentation.
 	    Since 2011-05, he also does most of the maintenance work, new features, and the releases.
       Earlier, many features of FreeMarker were introduced or substantially improved
       based on his ideas. He is the author of FMPP, the tool that saves
