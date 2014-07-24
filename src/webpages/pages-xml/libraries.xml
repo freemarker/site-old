@@ -23,7 +23,7 @@
         </tr>
         <tr valign="top" align="center">
           <td align="left" class="cell">
-            RTF-generator. Macros and <tt>TemplateMethodModel</tt> for generating simple
+            RTF-generator. Macros and <code>TemplateMethodModel</code> for generating simple
             Unicode RTF documents purely with macro calls and an escape directive
             (i.e. no raw RTF in the template). Contributed by Assaf Urieli at
             <a href="http://www.joli-ciel.com">Joliciel Informatique</a>.</td>

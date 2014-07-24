@@ -44,9 +44,9 @@
       alt="Powered by FreeMarker" border="0">&lt;/a></code>
     </p>
   </headsection>
-  
+
   <sections>
-  
+
     <section title="Software that incorporates FreeMarker">
     <resources>
       <resource>
@@ -55,8 +55,8 @@
          <description>
             Alfresco offers open source enterprise content management (ECM) - Document
             Management, Collaboration, Records Management, Knowledge Management,
-            Web Content Management and Imaging.  Alfresco was founded in 
-            June 2005 by John Newton, co-founder of Documentum, and 
+            Web Content Management and Imaging.  Alfresco was founded in
+            June 2005 by John Newton, co-founder of Documentum, and
             John Powell, former COO of Business Objects. Alfresco’s templating system
             is based on exposing their custom object model to FreeMarker templates.
             See <a href="http://www.alfresco.org/mediawiki/index.php/Template_Guide">here</a> for more information.
@@ -104,9 +104,9 @@
          <name>EnvGen</name>
          <url>http://www.basilv.com/psd/software</url>
          <description>
-            EnvGen is an <a href="http://ant.apache.org/">Ant</a> task for 
-            generating different versions of the same file parameterized for 
-            different environments (i.e. development, test, and production) using 
+            EnvGen is an <a href="http://ant.apache.org/">Ant</a> task for
+            generating different versions of the same file parameterized for
+            different environments (i.e. development, test, and production) using
             FreeMarker.
          </description>
       </resource>
@@ -185,9 +185,9 @@
            Magnolia powers the websites of government as well as leading Fortune
            500 enterprises in more than 100 countries on all continents of the
            world. It is a Content Management System favored for its ease-of-use
-           and availability under an Open Source license. Magnolia  
+           and availability under an Open Source license. Magnolia
            contains best-of-breed Java technology based on open standards to
-           allow for tailor-made solutions.         
+           allow for tailor-made solutions.
          </description>
       </resource>
       <resource>
@@ -201,7 +201,7 @@
             uses Freemarker to dynamically generate content for notification emails.
          </description>
       </resource>
-      
+
       <resource>
          <name>MessageGears</name>
          <url>http://www.messagegears.com/</url>
@@ -209,18 +209,18 @@
             MessageGears provides Email APIs and SMTP services. MessageGears
             email templating system is powered by XML documents which become the
             model to FreeMarker templates. Each message is then merged,
-            delivered, and tracked to optimize inbox placement.      
+            delivered, and tracked to optimize inbox placement.
          </description>
       </resource>
-      
+
       <resource>
          <name>m-Power</name>
          <url>http://www.mrc-productivity.com/</url>
          <description>
             m-Power is software which automates enterprise web application development and
-			modernizes legacy business applications. m-Power offers 15 standard Web templates like
-			prompted reports, graphs, pivot tables, maintenance apps, and more.  m-Power reduces
-			Web application development time, lowers development costs, and increases productivity.
+      modernizes legacy business applications. m-Power offers 15 standard Web templates like
+      prompted reports, graphs, pivot tables, maintenance apps, and more.  m-Power reduces
+      Web application development time, lowers development costs, and increases productivity.
          </description>
       </resource>
       <resource>
@@ -240,8 +240,8 @@
          <description>
             RunMyProcess is a SaaS (software as a service) Web 2.0 integration platform which allow  to
             automate, without any programming, the exchange between your internal
-            information system, your partners or your SaaS software. 
-            Freemarker is used to define data mappings and as a template tool for  
+            information system, your partners or your SaaS software.
+            Freemarker is used to define data mappings and as a template tool for
             connectors’ design.
          </description>
       </resource>
@@ -274,13 +274,13 @@
          <name>ZeroCode</name>
          <url>http://www.zerocode.com</url>
          <description>
-            ZeroCode allows you to build large, scalable, database-backed web 
+            ZeroCode allows you to build large, scalable, database-backed web
             applications with no programming effort, in minutes, from your browser.
          </description>
        </resource>
-    </resources>  
+    </resources>
     </section>
-    
+
     <section title="Web application frameworks that support FreeMarker">
       <p>Note that this list is not complete, since we only list products where the
       framework authors explicitly state that their product supports FreeMarker.
@@ -294,7 +294,7 @@
           <name>Cáñamo</name>
           <url>http://canyamo.sourceforge.net</url>
           <description>
-            [Spanish language only.] Canyamo is a framework for creating portals. The main 
+            [Spanish language only.] Canyamo is a framework for creating portals. The main
             developer is Alberto Molpeceres and it is the framework underlying the
             Spanish-language java portal <a href="http://javahispano.org">JavaHispano.</a>
           </description>
@@ -315,7 +315,7 @@
           <url>http://www.jpublish.org/</url>
           <description>
           Starting from version 2.0b1, JPublish supports FreeMarker as a
-          view layer. JPublish is a powerful web publishing system designed to 
+          view layer. JPublish is a powerful web publishing system designed to
           ensure a clean separation of developer roles.
           </description>
         </resource>
@@ -323,8 +323,8 @@
           <name>Open for Business</name>
           <url>http://ofbiz.apache.org/</url>
           <description>
-            <em>Open for Business</em> is an ongoing project to create a suite 
-          of open-source enterprise/e-commerce applications and modules built 
+            <em>Open for Business</em> is an ongoing project to create a suite
+          of open-source enterprise/e-commerce applications and modules built
           on a common framework. In 2003 the project decided to switch from JSP
           to FreeMarker for their view component.
           </description>
@@ -344,8 +344,8 @@
           <description>
           Spring is a complete Java/J2EE application framework based around a
           lightweight Inversion of Control container.  Spring includes, among many
-          other things, a full AOP interception framework, JDBC and ORM support, 
-          declarative transaction management (even without an application server) and 
+          other things, a full AOP interception framework, JDBC and ORM support,
+          declarative transaction management (even without an application server) and
           a rich, flexible MVC framework with various view technologies integrated.
           </description>
         </resource>
@@ -353,12 +353,12 @@
            <name>Tammi</name>
            <url>http://tammi.sourceforge.net</url>
            <description>
-           Tammi is a development framework and run-time container for 
-          JMX based web applications. Tammi MBeans can implement business 
-          logic themselves or act as proxies to native libraries, remote programs 
-          and other manageable systems. Tammi applications can be executed 
+           Tammi is a development framework and run-time container for
+          JMX based web applications. Tammi MBeans can implement business
+          logic themselves or act as proxies to native libraries, remote programs
+          and other manageable systems. Tammi applications can be executed
           either as a servlet or filter chain under a J2EE compatible servlet container.
-          In addition, it contains an internal HTTP(S) 1.1 capable connector with competent performance.           
+          In addition, it contains an internal HTTP(S) 1.1 capable connector with competent performance.
            </description>
         </resource>
         <resource>
@@ -367,7 +367,7 @@
            <description>
               VelocityWeb is a zero-configuration web framework for J2EE. It’s easy to debug/unit test without
               J2EE server, create view with Velocity/Freemarker, create DAO with Apache Common DBUtils,
-              SQL pagination, and transaction following <tt>TRANSACTION_PER_REQUEST</tt>. 
+              SQL pagination, and transaction following <code>TRANSACTION_PER_REQUEST</code>.
            </description>
         </resource>
         <resource>
@@ -389,7 +389,7 @@
         </resource>
       </resources>
     </section>
-    
+
     <section title="Websites generated by FreeMarker">
       <table border="0" cellpadding="4">
         <tr valign="top">
@@ -413,8 +413,8 @@
         <tr valign="top">
           <td><a href="http://www.drivenow.com.au">www.drivenow.com.au</a></td>
           <td>DriveNow - A car rental website that allows customers to book rental
-          cars from major suppliers at discounted last minute rates. Datacodex have 
-          developed a site DriveNow that utilises FreeMarker for it’s view layer 
+          cars from major suppliers at discounted last minute rates. Datacodex have
+          developed a site DriveNow that utilises FreeMarker for it’s view layer
           inside it’s framework, WebWork2.</td>
         </tr>
         <tr valign="top">
@@ -424,13 +424,13 @@
         </tr>
         <tr valign="top">
           <td><a href="http://www.hesteinfo.dk">www.hesteinfo.dk</a></td>
-          <td>Denmark’s largest equestrian site, where you will find 
+          <td>Denmark’s largest equestrian site, where you will find
           everything related to horses: latest world news, sales, jobs,
           forums, studs, results, and breeding.</td>
         </tr>
         <tr valign="top">
           <td><a href="http://dvd.indianajones.com">dvd.indianajones.com</a></td>
-          <td>The official site for the online content accompanying the 
+          <td>The official site for the online content accompanying the
           "Complete Indiana Jones DVD Set".</td>
         </tr>
         <tr valign="top">
@@ -456,7 +456,7 @@
         </tr>
         <tr valign="top">
           <td><a href="http://www.nadir.org">www.nadir.org</a></td>
-          <td>Nadir is a German political news portal that uses the 
+          <td>Nadir is a German political news portal that uses the
           above-listed, FreeMarker based Mir CMS.</td>
         </tr>
         <tr valign="top">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 
-     :wrap=soft:maxLineLen=80: 
+<!--
+     :wrap=soft:maxLineLen=80:
 -->
 <page title="FreeMarker vs. Velocity">
   <headsection>
@@ -22,7 +22,7 @@
       to simply use FreeMarker standard features. And in case you have difficulties there are of course active web forums and mailing lists.
       Moreover, since with FreeMarker you can use Model-2 frameworks as Struts and any JSP tag libraries out-of-the-box, perhaps third-party support is not a that big problem if you are in the servlet segment. Also, more and more servlet frameworks adapt FreeMarker as their view layer, next to JSP and Velocity.
     </p>
-       <p>   
+       <p>
       There are other parameters that should be considered when you compare
       tools, like code quality and documentation quality. But of course, we as
       the authors of the product should not say anything about this.
@@ -33,12 +33,12 @@
     <section title="Feature comparison sheet">
       <p>
       Here’s a quick, non-comprehensive listing of things you can do with
-        FreeMarker out of the box, and which you can not do with Velocity (or, 
+        FreeMarker out of the box, and which you can not do with Velocity (or,
         you can but only with nontrivial workarounds).
-        This list is originally based on a comparison with Velocity 1.2. 
+        This list is originally based on a comparison with Velocity 1.2.
         Contact us for change suggestions.
       </p>
-      
+
       <p>Number and date support</p>
       <ul>
         <li>You can perform arithmetic calculations and comparisons on arbitrary number types, including the arbitrary-precision types, not just integers.</li>
@@ -51,7 +51,7 @@
         <li>You can format dates locale- and timezone-sensitively, based on variety of built-in and custom date-formatting patterns.</li>
         <li>Identifiers (variable names) can contain non-English letters like accented letters, Arabic letters, Chinese letters, etc.</li>
       </ul>
-      
+
       <p>Loop handling:</p>
       <ul>
         <li>You can break out of loops.</li>
@@ -61,7 +61,7 @@
 
       <p>Array handling on the template language level:</p>
       <ul>
-        <li>You can access array elements, both primitive and non-primitive by index using the familiar <tt>[i]</tt> syntax.</li>
+        <li>You can access array elements, both primitive and non-primitive by index using the familiar <code>[i]</code> syntax.</li>
         <li>You can query the length of an array.</li>
       </ul>
 
@@ -73,7 +73,7 @@
         <li>Macros are plain variables, so you can select the macro to execute based on an expression, or pass a
             macro to another macro as parameter.</li>
         <li>Invoke a macro that is defined later in the template.</li>
-        <li>Local variables in macros, and recursive invocation of macros. In Velocity it is now possible with the currently (Feb. 2005) not officially documented <tt>#local</tt> function.</li>
+        <li>Local variables in macros, and recursive invocation of macros. In Velocity it is now possible with the currently (Feb. 2005) not officially documented <code>#local</code> function.</li>
       </ul>
 
       <p>Name-spaces:</p>
@@ -86,7 +86,7 @@
         <li>You can turn a string upper-, lower-, or title-case, turn upper-/lowercase only the first letter,
         convert (escape) the string to HTML, XML, or RTF, extract substrings, split strings, query string length,
         find/replace substring, …etc.</li>
-        <li>Access elements of lists by index, extract sublists, concatenate lists, query 
+        <li>Access elements of lists by index, extract sublists, concatenate lists, query
         size of a lists, sort lists.</li>
         <li>Access map elements by variable key, check if the map is empty, obtain the key or value list.</li>
       </ul>
@@ -103,7 +103,7 @@
       <p>Advanced rendering control:</p>
       <ul>
         <li>You can enclose a block of template in a set of tags that will
-        cause it to apply HTML escaping or XML escaping (or any other 
+        cause it to apply HTML escaping or XML escaping (or any other
         transformation you can express as a FreeMarker expression for that
         matter) on all interpolations (<code>${foo}</code>) in the block.</li>
         <li>FreeMarker has transforms, which are blocks of template that when
@@ -121,9 +121,9 @@
       <ul>
         <li>Beside the usual string, number, and boolean literals you can define
         list and map literals as well inside templates.</li>
-        <li>There is a support for all Java string literal escapes: 
-        <tt>\b</tt>, <tt>\t</tt>, <tt>\n</tt>, <tt>\f</tt>, <tt>\r</tt>, 
-        <tt>\"</tt>, <tt>\'</tt>, <tt>\\</tt>, also we support <tt>\xXXXX</tt> to
+        <li>There is a support for all Java string literal escapes:
+        <code>\b</code>, <code>\t</code>, <code>\n</code>, <code>\f</code>, <code>\r</code>,
+        <code>\"</code>, <code>\'</code>, <code>\\</code>, also we support <code>\xXXXX</code> to
         specify characters with their UNICODE code.</li>
       </ul>
 
@@ -140,7 +140,7 @@
         <li>You can use JSP custom tag libraries in templates.</li>
         <li>You can work directly on Python objects.</li>
       </ul>
-      
+
       <p>Powerful XML transformation capabilities:</p>
       <ul>
          <li>As of version 2.3, FreeMarker has powerful new XML transformation capabilities that make it a viable replacement for XSLT. Though there have been some attempts to make Velocity more

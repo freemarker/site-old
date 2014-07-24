@@ -40,7 +40,7 @@
               <li><p>
                 If the plugin comes with a different FreeMarker version than the one your app works with, it
                 will mark the usage of too fresh language features as errors, or the other way around. To fix this:<br />
-                Find <tt>freemarker*.jar</tt> under <tt><i>&lt;yourHome></i>/.eclipse/</tt>.
+                Find <code>freemarker*.jar</code> under <code><i>&lt;yourHome></i>/.eclipse/</code>.
                 Exit Eclipse, and overwrite it with the jar you want (the file name must remain the same, with the
                 now false version number in it).
                 <br />Note that downgrading or changes in the 1st or 2nd version number can (in theory)
