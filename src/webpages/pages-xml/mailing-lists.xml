@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <page title="Gmane">
 
   <sections>
     <section title="Subscription">
       <p>
-        <i>Note: While the user mailing list still works and questions are answerred, it's more efficient to 
+        <i>Note: While the user mailing list still works and questions are answerred, it’s more efficient to 
         <a href="http://stackoverflow.com/questions/ask?tags=freemarker">put your question on Stack Overflow with tag "freemareker"</a>.
         The FreeMarker maintainers are supposed to track questions with that tag.</i>
       </p>
       <p>
         To discuss wishes, new features, other deeper issues, subscribe to the freemarker-developer mailing list.
       </p>
-      <p><a href="https://sourceforge.net/p/freemarker/mailman/">You can see the lists and subscribe here...</a></p>
+      <p><a href="https://sourceforge.net/p/freemarker/mailman/">You can see the lists and subscribe here…</a></p>
     </section>
   
     <section title="Browse/search the mailing list archives">

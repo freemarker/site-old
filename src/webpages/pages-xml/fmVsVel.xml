@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- 
      :wrap=soft:maxLineLen=80: 
 -->
 <page title="FreeMarker vs. Velocity">
   <headsection>
-    <p><b>Disclaimer: This page is OLD, and had to be reviewed. Thus no links points to it from our homepage anymore...</b></p>
+    <p><b>Disclaimer: This page is OLD, and had to be reviewed. Thus no links points to it from our homepage anymore…</b></p>
     <p>
       <a href="http://jakarta.apache.org/velocity/index.html">Velocity</a> is a
       simpler, more lightweight tool. Thus, it does not address
@@ -32,7 +32,7 @@
   <sections>
     <section title="Feature comparison sheet">
       <p>
-      Here's a quick, non-comprehensive listing of things you can do with
+      Here’s a quick, non-comprehensive listing of things you can do with
         FreeMarker out of the box, and which you can not do with Velocity (or, 
         you can but only with nontrivial workarounds).
         This list is originally based on a comparison with Velocity 1.2. 
@@ -85,7 +85,7 @@
       <ul>
         <li>You can turn a string upper-, lower-, or title-case, turn upper-/lowercase only the first letter,
         convert (escape) the string to HTML, XML, or RTF, extract substrings, split strings, query string length,
-        find/replace substring, ...etc.</li>
+        find/replace substring, …etc.</li>
         <li>Access elements of lists by index, extract sublists, concatenate lists, query 
         size of a lists, sort lists.</li>
         <li>Access map elements by variable key, check if the map is empty, obtain the key or value list.</li>
@@ -151,7 +151,7 @@
       <ul>
         <li>You can capture the output of an arbitrary part of the template into a context variable.</li>
         <li>You can interpret arbitrary context variable as if it were a template definition.</li>
-        <li>You can imagine what can you do when you combine the two...</li>
+        <li>You can imagine what can you do when you combine the two…</li>
       </ul>
     </section>
   </sections>

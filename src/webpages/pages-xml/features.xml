@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <page title="Features">
   <headsection>
     <p>
@@ -9,7 +9,7 @@
     <section title="General purpose">
       <ul>
         <li>Can be used to generate any kind of text: HTML, XML, RTF, Java source code, etc.</li>
-        <li>Easy to embed into your product: Lightweight, no required dependencies. Doesn't assume servlet environment.</li>
+        <li>Easy to embed into your product: Lightweight, no required dependencies. Doesn’t assume servlet environment.</li>
         <li>Pluggable template loader: you can load templates from any sources; local files, database, etc.</li>
         <li>You can do whatever you want with the generated text: store it in a local file, send it as e-mail, send it back to a Web browser from a Web application, etc.</li>
       </ul>
@@ -49,7 +49,7 @@
         <li>Designed for MVC pattern: separate visual design from application logic.</li>
         <li>Built-in constructs in the template language to handle typical Web-related tasks like HTML-escaping.</li>
         <li>Can be integrated with "Model 2" Web application frameworks out-of-the-box as JSP replacement.</li>
-        <li>Supports JSP taglibs (tested up to JSP 2.1 currently) via <tt>FreemarkerSerlvet</tt>, except that the JSP 2 "tag files" (i.e., when custom tags are <em>implemented</em> in JSP language rather than as Java classes) aren't supported.</li>
+        <li>Supports JSP taglibs (tested up to JSP 2.1 currently) via <tt>FreemarkerSerlvet</tt>, except that the JSP 2 "tag files" (i.e., when custom tags are <em>implemented</em> in JSP language rather than as Java classes) aren’t supported.</li>
       </ul>
     </section>
     
@@ -74,7 +74,7 @@
     <section title="Comparing with other products">
       <p>
         You might also be interested 
-        <a href="fmVsVel.html">what's difference between
+        <a href="fmVsVel.html">what’s difference between
         FreeMarker and Apache Velocity</a>.
       </p>
       

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <page title="File generator tool (FMPP)">
   <headsection>
     <p>
@@ -17,7 +17,7 @@
     <p>
       Note that the FreeMarker download already includes a light-weight Ant task specialized
       on transforming XML files with FreeMarker templates. FMPP can do it too, but as it is
-      more heavy-weight and more general purpose, it's harder to learn using it.
+      more heavy-weight and more general purpose, it’s harder to learn using it.
     </p>
     
   </headsection>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <page title="Editor/IDE plugins">
   <headsection>
     <downloadWarnings />
@@ -32,7 +32,7 @@
           <td colspan="2">Part of the JBoss Tools Project. Install like this:
             <ol>
               <li><p>
-                In Eclipse, "Help" / "Eclipse Marketplace...", search for "JBoss Tools", "Install".
+                In Eclipse, "Help" / "Eclipse Marketplace…", search for "JBoss Tools", "Install".
                 A tree of checkboxes will appear, uncheck all (by unchecking the root) except "FreeMarker IDE".
                 (On old Eclipse you may have to use the
                 <a href="http://www.jboss.org/tools/download/">JBoss Tools download page</a> instead.)
@@ -78,7 +78,7 @@
           <td>Syntax highlight, code completion, template navigation</td>
           <td colspan="2">Downloadable from the NetBeans plugins
           site.
-          <br /><a href="http://plugins.netbeans.org/PluginPortal/faces/PluginDetailPage.jsp?pluginid=3755">NetBeans plugin download page...</a></td>
+          <br /><a href="http://plugins.netbeans.org/PluginPortal/faces/PluginDetailPage.jsp?pluginid=3755">NetBeans plugin download page…</a></td>
         </tr>
         <tr>
           <td>TextPad 4 or later</td>
@@ -102,12 +102,12 @@
         </tr>
         <tr>
           <td><a href="http://www.jedit.org">jEdit&#160;4.1</a></td>
-          <td>jEdit is a Free programmer's text editor written in Java.
+          <td>jEdit is a Free programmer’s text editor written in Java.
           It is highly customizable, extensible, and has an easy-to-use interface.</td>
         </tr>
         <tr>
           <td><a href="http://www.modelworks.com">SitePad&#160;Pro&#160;6</a></td>
-          <td>SitePad Pro is an Integrated Development Environment (IDE) for Java, HTML, VRML and other files. It's commercial software.</td>
+          <td>SitePad Pro is an Integrated Development Environment (IDE) for Java, HTML, VRML and other files. It’s commercial software.</td>
         </tr>
       </table>
     </section>

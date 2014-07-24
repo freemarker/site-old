@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 
 <!-- :wrap=soft:maxLineLen=80: -->
@@ -14,7 +14,7 @@
       frameworks) and an URL.
     </p>
     <p>
-      We'll also be glad if you display one of the following Powered by FreeMarker logos
+      We’ll also be glad if you display one of the following Powered by FreeMarker logos
       on your website in recognition of our work:
     </p>
     <table border="0" cellpadding="0" cellspacing="6">
@@ -57,7 +57,7 @@
             Management, Collaboration, Records Management, Knowledge Management,
             Web Content Management and Imaging.  Alfresco was founded in 
             June 2005 by John Newton, co-founder of Documentum, and 
-            John Powell, former COO of Business Objects. Alfresco's templating system
+            John Powell, former COO of Business Objects. Alfresco’s templating system
             is based on exposing their custom object model to FreeMarker templates.
             See <a href="http://www.alfresco.org/mediawiki/index.php/Template_Guide">here</a> for more information.
          </description>
@@ -68,7 +68,7 @@
          <description>
             APT-Jelly is an engine for generating artifacts (e.g. source code, config files)
             from Java source code. APT-Jelly provides a template-oriented approach to artifact generation
-            by providing an interface for Sun's Annotation Processing Tool (APT) to your
+            by providing an interface for Sun’s Annotation Processing Tool (APT) to your
             favorite templating engine.
          </description>
       </resource>
@@ -242,7 +242,7 @@
             automate, without any programming, the exchange between your internal
             information system, your partners or your SaaS software. 
             Freemarker is used to define data mappings and as a template tool for  
-            connectors' design.
+            connectors’ design.
          </description>
       </resource>
       <resource>
@@ -291,7 +291,7 @@
       For more information <a href="docs/pgui_misc_servlet.html">click here...</a></p>
       <resources>
         <resource>
-          <name>C��amo</name>
+          <name>Cáñamo</name>
           <url>http://canyamo.sourceforge.net</url>
           <description>
             [Spanish language only.] Canyamo is a framework for creating portals. The main 
@@ -343,7 +343,7 @@
           <url>http://www.springframework.org/</url>
           <description>
           Spring is a complete Java/J2EE application framework based around a
-          lightweight Inversion of Control container. �Spring includes, among many
+          lightweight Inversion of Control container.  Spring includes, among many
           other things, a full AOP interception framework, JDBC and ORM support, 
           declarative transaction management (even without an application server) and 
           a rich, flexible MVC framework with various view technologies integrated.
@@ -365,7 +365,7 @@
            <name>VelocityWeb</name>
            <url>http://velocityweb.sourceforge.net/</url>
            <description>
-              VelocityWeb is a zero-configuration web framework for J2EE. It's easy to debug/unit test without
+              VelocityWeb is a zero-configuration web framework for J2EE. It’s easy to debug/unit test without
               J2EE server, create view with Velocity/Freemarker, create DAO with Apache Common DBUtils,
               SQL pagination, and transaction following <tt>TRANSACTION_PER_REQUEST</tt>. 
            </description>
@@ -414,8 +414,8 @@
           <td><a href="http://www.drivenow.com.au">www.drivenow.com.au</a></td>
           <td>DriveNow - A car rental website that allows customers to book rental
           cars from major suppliers at discounted last minute rates. Datacodex have 
-          developed a site DriveNow that utilises FreeMarker for it's view layer 
-          inside it's framework, WebWork2.</td>
+          developed a site DriveNow that utilises FreeMarker for it’s view layer 
+          inside it’s framework, WebWork2.</td>
         </tr>
         <tr valign="top">
           <td><a href="http://freemarker.org">freemarker.org</a></td>
@@ -424,7 +424,7 @@
         </tr>
         <tr valign="top">
           <td><a href="http://www.hesteinfo.dk">www.hesteinfo.dk</a></td>
-          <td>Denmark's largest equestrian site, where you will find 
+          <td>Denmark’s largest equestrian site, where you will find 
           everything related to horses: latest world news, sales, jobs,
           forums, studs, results, and breeding.</td>
         </tr>
@@ -447,12 +447,12 @@
         </tr>
         <tr valign="top">
           <td><a href="http://lastwords.com/">lastwords.com</a></td>
-          <td>A writer's workshop.
+          <td>A writer’s workshop.
           The vision: create an environment where authors of all ages and skills could read, submit, and critique the works of their peers.</td>
         </tr>
         <tr valign="top">
           <td><a href="http://musikk.telenormobil.no">musikk.telenormobil.no</a> and <a href="http://mp3.platekompaniet.no">mp3.platekompaniet.no</a></td>
-          <td>Together form Norway's second largest MP3-download shop.</td>
+          <td>Together form Norway’s second largest MP3-download shop.</td>
         </tr>
         <tr valign="top">
           <td><a href="http://www.nadir.org">www.nadir.org</a></td>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <page title="Migrating from Velocity">
   <headsection>
     <downloadWarnings />
@@ -7,7 +7,7 @@
       If you have just discovered FreeMarker and would like to switch to it, but
       you have existing solutions that use Velocity here are the steps you have
       to take to convert to FreeMarker. If you wonder why would you want to
-      switch to using FreeMarker, here's a quick summary of 
+      switch to using FreeMarker, here’s a quick summary of 
       <a href="fmVsVel.html">FreeMarker vs. Velocity features</a> features.
     </p>
   </headsection>
@@ -28,7 +28,7 @@
     </section>
     <section title="Convert your Java code">
       <p>
-        Once you're through the template conversion process, you have to rewrite
+        Once you’re through the template conversion process, you have to rewrite
         your Java code so that it uses FreeMarker instead of Velocity.
         If you use the latest preview of 2.1 release, then you have to create an
         instance of <code>freemarker.template.Configuration</code> - it is the 
@@ -41,7 +41,7 @@
         <code>process()</code> method.
       </p>
       <p>
-        If you're using the last public release, the 2.0.3 version, then the 
+        If you’re using the last public release, the 2.0.3 version, then the 
         process is a little bit different. Here you create an instance of
         <code>freemarker.template.FileTemplateCache</code> instead of
         <code>Configuration</code>, but the rest of the process is similar to
@@ -50,11 +50,11 @@
       </p>
       <p>
         Note that in FreeMarker, you can use a huge variety of data model to
-        Java object mappings. Velocity's approach - namely to map template 
+        Java object mappings. Velocity’s approach - namely to map template 
         expressions to direct reflective methods invocations on Java objects - 
         is just one of possibilities in FreeMarker. Since during the migration 
-        you'll probably want to stick with this data model mapping (at least for 
-        a while), you'll have to run your context objects through an adapter 
+        you’ll probably want to stick with this data model mapping (at least for 
+        a while), you’ll have to run your context objects through an adapter 
         named <code>freemarker.ext.beans.BeansWrapper</code> before placing them
         into the context. Also note that FreeMarker uses the Java built-in Beans 
         introspection, so - contrary to Velocity - it completely adheres to
@@ -71,11 +71,11 @@
     </section>
     <section title="Replacing Anakia">
       <p>
-        If you were using the Velocity's Anakia tool, you'll be pleased to know
-        that there's an equivalent tool in FreeMarker. It has a less poetic name
+        If you were using the Velocity’s Anakia tool, you’ll be pleased to know
+        that there’s an equivalent tool in FreeMarker. It has a less poetic name
         "FreemarkerXmlTask", and it does just what Anakia did - converts XML
-        documents through a template as part of an Ant build process. You'll 
-        however find that thanks to the FreeMarker's notion of abstract data 
+        documents through a template as part of an Ant build process. You’ll 
+        however find that thanks to the FreeMarker’s notion of abstract data 
         models the syntax for dealing with XML documents in FreeMarker is orders
         of magnitude more intuitive than what Anakia offers you. In our opinion,
         that is. The "FreemarkerXmlTask" is included in the FreeMarker download.
