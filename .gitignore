@@ -3,5 +3,6 @@
 /build/
 /build.properties
 /archive/
-
+.properties
+.classpath
 src/manual/book.xml~
