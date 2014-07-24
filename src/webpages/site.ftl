@@ -58,7 +58,7 @@
     { "title": "Documentation", "url": "docs/index.html" }
   ]/>
 
-  <nav class="category-nav" role="navigation"><#t>
+  <nav class="header-nav primary-nav" role="navigation"><#t>
     <ul><#t>
       <#list links as link>
         <li><a href="${link.url}"<#if activeTab == link.title> class="active"</#if>>${link.title}</a></li><#t>
@@ -75,7 +75,7 @@
     { "title": "Features",      "url": "index.html" }
   ]/>
 
-  <nav class="section-nav" role="navigation"><#t>
+  <nav class="header-nav secondary-nav" role="navigation"><#t>
     <ul><#t>
       <#list links as link>
         <li><a href="${link.url}"<#if activeTab == link.title> class="active"</#if>>${link.title}</a></li><#t>
