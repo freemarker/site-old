@@ -32,7 +32,7 @@
   <sections>
     <section title="Feature comparison sheet">
       <p>
-      Here's a quick, non-comprehensive listing of things you can do with
+      Here’s a quick, non-comprehensive listing of things you can do with
         FreeMarker out of the box, and which you can not do with Velocity (or, 
         you can but only with nontrivial workarounds).
         This list is originally based on a comparison with Velocity 1.2. 

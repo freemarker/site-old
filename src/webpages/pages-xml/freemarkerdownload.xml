@@ -4,7 +4,7 @@
     <downloadWarnings />
     <p>
       <b>About backward compatibility:</b> Before 2.3.0, releases with different
-      second version numbers (like 2.2.x and 2.3.x) aren't fully compatible.
+      second version numbers (like 2.2.x and 2.3.x) aren’t fully compatible.
       The 2.3.x series is quite conservative about backward compatibility,
       so you can upgrade FreeMarker without much risk within it.
     </p>
@@ -41,7 +41,7 @@ two freemarker.jar-s and unpredictable behavior!
   <div class="warning">
     <p>Until about 2007 the Maven group name was "freemarker" instead of "org.freemarker", and as the XML comment above says,
     this can cause problems, as Maven will see them as two independent artifacts with no version conflict. If you run into
-    this issue, find the dependency that depends on the old FreeMarker, and add this to your application's POM where you
+    this issue, find the dependency that depends on the old FreeMarker, and add this to your application’s POM where you
     declare the problematic dependency:</p>
     <pre><![CDATA[<dependency>
   <groupId>...</groupId>
@@ -104,7 +104,7 @@ two freemarker.jar-s and unpredictable behavior!
   
   <section title="Other FreeMarker releases">
     <p>
-    	You can visit the project's <a href="http://sourceforge.net/project/showfiles.php?group_id=794">SourceForge download page</a>
+    	You can visit the project’s <a href="http://sourceforge.net/project/showfiles.php?group_id=794">SourceForge download page</a>
     	to download past releases that are not featured on this download page.
     </p>
   </section>

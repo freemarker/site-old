@@ -11,7 +11,7 @@
      FreeMarker 2.3 introduced some powerful new facilities for XML processing. You can drop XML documents into the data model, and templates can pull data from them in a variety of ways, such as with XPath expressions. See the <a href="docs/xgui.html">appropriate manual section</a> for a detailed introduction. Here, we contrast FreeMarker, as an XML transformation tool with the much better-known XSLT stylesheet approach promulgated by the Worldwide Web Consortium (W3C).
     </p>
     <p>
-      XSLT is a W3C recommendation for transforming XML. Its basic programming paradigm is a functional declarative programming model. Though this theoretical model is elegant and powerful -- at least for those who master it -- the fact remains that, put simply, it is not everybody's cup of tea. XSL syntax, mostly because it is an XML application, is really quite verbose and awkward to edit. It is our opinion that using FreeMarker instead of XSLT will be a very welcome relief to many people out there.
+      XSLT is a W3C recommendation for transforming XML. Its basic programming paradigm is a functional declarative programming model. Though this theoretical model is elegant and powerful -- at least for those who master it -- the fact remains that, put simply, it is not everybody’s cup of tea. XSL syntax, mostly because it is an XML application, is really quite verbose and awkward to edit. It is our opinion that using FreeMarker instead of XSLT will be a very welcome relief to many people out there.
     </p>
   </headsection>
   <sections>
@@ -43,7 +43,7 @@
         As of this writing, we do not have a wide range of comparative tests on runtime performance. However, initial indications are that FreeMarker is faster and less memory hungry than XSLT (Saxon implementation) for equivalent transformation tasks.
       </p>
       <p>
-        <i>Note: With FreeMarker 2.3pre3, we switched over from using XSLT stylesheets to generate the Manual using FreeMarker itself. The FTL-based transformation, producing almost identical output from the same input (a big XDocBook XML document) is 15 times faster than the legacy XSLT transformation using Saxon. Moreover, the FTL-based transformation requires about 4 megabytes of heap space, vs. 14 megabytes for Saxon. But unfortunately, these results can't be fairly compared, because the FreeMarker version uses a dedicated Java program that takes over some of the XDocBook processing work, and it is not clear what the result would be without that.</i>
+        <i>Note: With FreeMarker 2.3pre3, we switched over from using XSLT stylesheets to generate the Manual using FreeMarker itself. The FTL-based transformation, producing almost identical output from the same input (a big XDocBook XML document) is 15 times faster than the legacy XSLT transformation using Saxon. Moreover, the FTL-based transformation requires about 4 megabytes of heap space, vs. 14 megabytes for Saxon. But unfortunately, these results can’t be fairly compared, because the FreeMarker version uses a dedicated Java program that takes over some of the XDocBook processing work, and it is not clear what the result would be without that.</i>
       </p>
     </section>
   </sections>
