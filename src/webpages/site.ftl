@@ -48,16 +48,16 @@
 
 [#macro footer]
   <div class="report">
-    Found broken link or other problem with this site?
-    Report to: <a href="mailto:ddekanyREMOVEME@freemail.hu">ddekanyREMOVEME@freemail.hu</a>
+    Found broken link or other problem with this site?<br>
+    Report to: <a href="mailto:ddekanyREMOVEME@freemail.hu">ddekanyREMOVEME@freemail.hu</a><br>
     (remove the "REMOVEME" from the address)
   </div>
 
   [#setting time_zone = "GMT"]
   [#local timeStamp = properties.timeStamp?datetime("yyyy-MM-dd HH:mm:ss z")]
   <div class="copyright">
-    Page last generated: <time datetime="${timeStamp?iso_utc}" title="${timeStamp?string.full}">${properties.timeStamp}</time>
-    All content on this page is copyrighted by the FreeMarker project.
+    Page last generated: <time datetime="${timeStamp?iso_utc}" title="${timeStamp?string.full}">${properties.timeStamp}</time><br>
+    All content on this page is copyrighted by the FreeMarker project.<br>
   
     [#if !properties["site.offline"]??]
       <a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=794&amp;type=1" alt="SourceForge Logo"></a>

@@ -38,10 +38,42 @@ a:hover {
   text-decoration: underline;
 }
 
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 4px;
+  vertical-align: top;
+}
+
+.shaded-table th,
+.shaded-table td {
+  border: 1px solid #FFF;
+  text-align: center;
+}
+
+.shaded-table th:first-child,
+.shaded-table td:first-child {
+  text-align: left;
+}
+
+.shaded-table th {
+  background-color: #C0C0C0;
+}
+
+.shaded-table td {
+  background-color: #E0E0E0;
+}
+
 /* page wrapper */
 .page-wrapper {
   padding: 20px;
 }
+
 
 /* table of contents */
 .table-of-contents {
@@ -52,6 +84,7 @@ a:hover {
   padding: 10px;
   width: 20%;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .table-of-contents ul {
@@ -86,6 +119,7 @@ a:hover {
   float: left;
   width: 80%;
   padding-left: 40px;
+  margin-bottom: 10px;
 }
 
 .page-main .page-title {
