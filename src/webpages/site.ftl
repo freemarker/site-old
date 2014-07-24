@@ -2,13 +2,20 @@
 <#global deployUrl = project_node.site.@deployUrl />
 <!doctype html>
 <html lang="en">
-  <head>
+  <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Keywords" content="FreeMarker, template, templates, HTML, HTML template, page template, text, macro, macros, preprocessor, MVC, view, servlet, Java, free, open source, JSP, taglib, Velocity, WebMacro">
     <meta name="Description" content="Template engine for generating text (HTML, source code, e-mails, config files, etc.) that depends on changing data. MVC, highly configurable, macros, Free.">
     <meta name="verify-v1" content="OU7KNU7q+wGizVoaX/MNUo/tZ5o5RC06VfCjQIRRJu4=">
     <link rel="stylesheet" type="text/css" href="site.css">
+    <meta property="og:title" content="${.node.page.@title?html} – FreeMarker Java Template Engine">
+    <meta property="og:locale" content="en_US">
+    <#--
+    <meta property="og:url" content="${deployUrl}">
+    <link rel="canonical" href="${deployUrl}">-->
     <title>${.node.page.@title?html} – FreeMarker Java Template Engine</title>
   </head>
   <body>
@@ -40,10 +47,10 @@
 <#macro header>
   <#assign logoImage = "logo_e0e0e0.png" />
   <a class="logo-link" href="${deployUrl?html}">FreeMarker</a>
-  <@categoryNav />
+  <@parentNav />
 </#macro>
 
-<#macro categoryNav activeTab="Overview">
+<#macro parentNav activeTab="Overview">
   <#local links = [
     { "title": "Overview",      "url": "index.html" },
     { "title": "Download",      "url": "freemarkerdownload.html" },
@@ -57,6 +64,24 @@
       </#list>
     </ul><#t>
   </nav><#t>
+</#macro>
+
+<#macro sectionNav>
+  <#local links = [
+    { "title": "Overview",      "url": "index.html" },
+    { "title": "Features",      "url": "index.html" },
+    { "title": "Report a bug",  "url": "index.html" },
+    { "title": "Features",      "url": "index.html" }
+  ]/>
+  
+  <nav class="category-nav" role="navigation"><#t>
+    <ul><#t>
+      <#list links as link>
+        <li><a href="${link.url}"<#if activeTab == link.title> class="active"</#if>>${link.title}</a></li><#t>
+      </#list>
+    </ul><#t>
+  </nav><#t>
+
 </#macro>
 
 
