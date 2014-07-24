@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ivysettings>
   <!-- Prevent IvyDE error: -->
   <property name="server.ivy.repo.root" value="${ivy.project.dir}/NOT_SET" override="false" />

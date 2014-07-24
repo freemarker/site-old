@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <project name="FreeMarker Site" default="pack" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
 
@@ -55,7 +55,7 @@
       destdir="build/site/tmp"
       includes="site.xml"
       template="src/webpages/eclipse-toc.ftl"
-      encoding="iso-8859-1"
+      encoding="utf-8"
       incremental="no">
     </freemarker>
     <!-- Rename the site.xml file into the toc.xml file and delete the site/tmp directory -->
