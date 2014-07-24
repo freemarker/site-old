@@ -15,45 +15,38 @@
     </p>
   </headsection>
   <sections>
-    <section title="The plugins">
+    <section title="Plugins">
       <p>Anybody who wants to improve these syntax highlights is welcome!</p>
+
+      <h3>Eclipse</h3>
+      <p>Features: Syntax highlighting, syntax error indicator, code completion for macro names and bean property names.</p>
+
+      <h4>Installation</h4>
+      <ol>
+        <li>In Eclipse, "Help" / "Eclipse Marketplace…", search for "JBoss Tools", "Install". A tree of checkboxes will appear, uncheck all (by unchecking the root) except "FreeMarker IDE". (On old Eclipse you may have to use the <a href="http://www.jboss.org/tools/download/">JBoss Tools download page</a> instead.)</li>
+        <li>If the plugin comes with a different FreeMarker version than the one your app works with, it will mark the usage of too fresh language features as errors, or the other way around. To fix this:<br /> Find <code>freemarker*.jar</code> under <code><i>&lt;yourHome></i>/.eclipse/</code>. Exit Eclipse, and overwrite it with the jar you want (the file name must remain the same, with the now false version number in it).<br />Note that downgrading or changes in the 1st or 2nd version number can (in theory) break the plugin.</li>
+      </ol>
+
+      <h3>Emacs</h3>
+      <p>Features: Syntax highlighting, indentation, block folding, some code navigation. Emacs major-mode for editing Web templates, includes FreeMarker support among others.</p>
+      <p><a href="http://web-mode.org/">The homepage of web-mode.el</a></p>
+
+      <h3>NetBeans 6.0 or later</h3>
+      <p>Features: Syntax highlighting, code completion, template navigation.</p>
+      <p><a href="http://plugins.netbeans.org/PluginPortal/faces/PluginDetailPage.jsp?pluginid=3755">NetBeans plugin download page</a></p>
+
+      <h3>TextPad 4 or later</h3>
+      <p>Features: Syntax highlighting</p>
+      <p>Last updated: 2003-03-24</p>
+      <p><a href="download/editor/textpadftl.zip">Download textpadftl.zip</a></p>
+
+      <h3>Vim ("Vi IMproved")</h3>
+      <p>Features: Syntax highlighting</p>
+      <p>Last updated: 2011-10-07</p>
+      <p><a href="download/editor/ftl.vim">ftl.vim</a></p>
+
       <table class="shaded-table">
-        <tr>
-          <th>Editor or IDE</th>
-          <th>Features</th>
-          <th>Version</th>
-          <th>File</th>
-        </tr>
-        <tr>
-          <td>Eclipse</td>
-          <td>Syntax highlight, syntax error indicator,
-            code completion for macro names and bean property names.
-          </td>
-          <td colspan="2">Part of the JBoss Tools Project. Install like this:
-            <ol>
-              <li><p>
-                In Eclipse, "Help" / "Eclipse Marketplace…", search for "JBoss Tools", "Install".
-                A tree of checkboxes will appear, uncheck all (by unchecking the root) except "FreeMarker IDE".
-                (On old Eclipse you may have to use the
-                <a href="http://www.jboss.org/tools/download/">JBoss Tools download page</a> instead.)
-              </p></li>
-              <li><p>
-                If the plugin comes with a different FreeMarker version than the one your app works with, it
-                will mark the usage of too fresh language features as errors, or the other way around. To fix this:<br />
-                Find <code>freemarker*.jar</code> under <code><i>&lt;yourHome></i>/.eclipse/</code>.
-                Exit Eclipse, and overwrite it with the jar you want (the file name must remain the same, with the
-                now false version number in it).
-                <br />Note that downgrading or changes in the 1st or 2nd version number can (in theory)
-                break the plugin.
-              </p></li>
-            </ol>
-          </td>
-        </tr>
-        <tr>
-          <td>Emacs</td>
-          <td>Syntax highlight, indentation, block folding, some code navigation. Emacs major-mode for editing Web templates, includes FreeMarker support among others.</td>
-          <td colspan="2"><a href="http://web-mode.org/">The homepage of web-mode.el</a></td>
-        </tr>
+
         <tr>
           <td>Eclipse (tried with 3.x)</td>
           <td>FreeMarker documentation in the Eclipse help system.<br />
@@ -73,43 +66,17 @@
           <td>2009-08-08</td>
           <td><a href="download/editor/kwriteftl.tar.gz">kwriteftl.tar.gz</a></td>
         </tr>
-        <tr>
-          <td>NetBeans 6.0 or later</td>
-          <td>Syntax highlight, code completion, template navigation</td>
-          <td colspan="2">Downloadable from the NetBeans plugins
-          site.
-          <br /><a href="http://plugins.netbeans.org/PluginPortal/faces/PluginDetailPage.jsp?pluginid=3755">NetBeans plugin download page…</a></td>
-        </tr>
-        <tr>
-          <td>TextPad 4 or later</td>
-          <td>Syntax highlight</td>
-          <td>2003-03-24</td>
-          <td><a href="download/editor/textpadftl.zip">textpadftl.zip</a></td>
-        </tr>
-        <tr>
-          <td>Vim ("Vi IMproved")</td>
-          <td>Syntax highlight</td>
-          <td>2011-10-07</td>
-          <td><a href="download/editor/ftl.vim">ftl.vim</a></td>
-        </tr>
       </table>
     </section>
     <section title="Products that support FreeMarker out-of-the-box">
-      <table>
-        <tr>
-          <td><a href="http://www.jetbrains.com/idea/">IntelliJ&#160;IDEA&#160;8.0</a></td>
-          <td>A well-known feature-rich commercial Java IDE.</td>
-        </tr>
-        <tr>
-          <td><a href="http://www.jedit.org">jEdit&#160;4.1</a></td>
-          <td>jEdit is a Free programmer’s text editor written in Java.
-          It is highly customizable, extensible, and has an easy-to-use interface.</td>
-        </tr>
-        <tr>
-          <td><a href="http://www.modelworks.com">SitePad&#160;Pro&#160;6</a></td>
-          <td>SitePad Pro is an Integrated Development Environment (IDE) for Java, HTML, VRML and other files. It’s commercial software.</td>
-        </tr>
-      </table>
+      <h3><a href="http://www.jetbrains.com/idea/" rel="nofollow">IntelliJ IDEA</a></h3>
+      <p>A well-known feature-rich commercial Java IDE.</p>
+
+      <h3><a href="http://www.jedit.org" rel="nofollow">jEdit</a></h3>
+      <p>jEdit is a Free programmer’s text editor written in Java. It is highly customizable, extensible, and has an easy-to-use interface.</p>
+
+      <h3><a href="http://www.modelworks.com" rel="nofollow">SitePad Pro</a></h3>
+      <p>SitePad Pro is an Integrated Development Environment (IDE) for Java, HTML, VRML and other files. It’s commercial software.</p>
     </section>
   </sections>
 </page>
