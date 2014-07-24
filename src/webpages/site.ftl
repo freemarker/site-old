@@ -8,7 +8,7 @@
     <meta name="Description" content="Template engine for generating text (HTML, source code, e-mails, config files, etc.) that depends on changing data. MVC, highly configurable, macros, Free.">
     <meta name="verify-v1" content="OU7KNU7q+wGizVoaX/MNUo/tZ5o5RC06VfCjQIRRJu4=">
     <link rel="STYLESHEET" type="text/css" href="site.css">
-    <title>FreeMarker Java Template Engine – ${.node.page.@title?html}</title>
+    <title>${.node.page.@title?html} – FreeMarker Java Template Engine</title>
   </head>
   <body>
     <#-- header -->
