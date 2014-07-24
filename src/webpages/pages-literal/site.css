@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
   font-size: 14px;
   color: #333;
   line-height: 1.5;
@@ -19,7 +19,8 @@ body {
 
 nav,
 main,
-footer {
+footer,
+header {
   display: block;
 }
 
@@ -44,11 +45,6 @@ table {
   border-collapse: collapse;
 }
 
-th,
-td {
-  padding: 4px;
-  vertical-align: top;
-}
 
 h1, h2, h3 {
   color: #0050B2;
@@ -56,34 +52,13 @@ h1, h2, h3 {
   line-height: 1;
 }
 
-
-/* shaded table */
-.shaded-table th,
-.shaded-table td {
-  border: 1px solid #FFF;
-  text-align: center;
-}
-
-.shaded-table th:first-child,
-.shaded-table td:first-child {
-  text-align: left;
-}
-
-.shaded-table th {
-  background-color: #C0C0C0;
-}
-
-.shaded-table td {
-  background-color: #E0E0E0;
-}
-
-/* page wrapper */
+/* page wrapper
 .page-wrapper {
   padding: 20px;
-}
+} */
 
 
-/* table of contents */
+/* table of contents
 .table-of-contents {
   background-color: #E0E0E0;
   border: 1px solid #000;
@@ -120,9 +95,9 @@ h1, h2, h3 {
 .table-of-contents a.logo {
   display: block;
   text-align: center;
-}
+} */
 
-/* main */
+/* main
 .page-main {
   float: left;
   width: 80%;
@@ -135,9 +110,9 @@ h1, h2, h3 {
   border-bottom: 1px solid #333;
   text-align: right;
   margin: 0;
-}
+} */
 
-/* footer */
+/* footer
 .page-footer {
   border-top: 1px solid #C0C0C0;
   clear: both;
@@ -154,4 +129,4 @@ h1, h2, h3 {
   width: 50%;
   float: right;
   text-align: right;
-}
+} */
