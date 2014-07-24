@@ -50,6 +50,14 @@ td {
   vertical-align: top;
 }
 
+h1, h2, h3 {
+  color: #0050B2;
+  margin: 24px 0 12px;
+  line-height: 1;
+}
+
+
+/* shaded table */
 .shaded-table th,
 .shaded-table td {
   border: 1px solid #FFF;
@@ -123,12 +131,10 @@ td {
 }
 
 .page-main .page-title {
-  color: #0050B2;
   font-size: 30px;
   border-bottom: 1px solid #333;
   text-align: right;
   margin: 0;
-  line-height: 1;
 }
 
 /* footer */
