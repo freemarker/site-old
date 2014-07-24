@@ -24,16 +24,20 @@
       <header class="page-header">
         <@header />
       </header>
+
+      <div class="sidebar-wrapper">
+        <@sidebar />
+      </div>
       <#-- table of contents
       <nav class="table-of-contents" role="navigation">
         <#visit project_node using [toc] />
       </nav> -->
 
-      <#-- content
+      <#-- content -->
       <main class="page-main" role="main">
         <h1 class="page-title">${.node.page.@title?html}</h1>
         <#recurse  using "content.ftl" />
-      </main> -->
+      </main>
 
       <#-- footer
       <footer class="page-footer" role="contentinfo">
@@ -82,6 +86,28 @@
       </#list>
     </ul><#t>
   </nav><#t>
+
+</#macro>
+
+
+<#macro sidebar>
+  <section class="sidebar">
+    <h1>Latest Version</h1>
+    <ul>
+      <li><a href="http://sourceforge.net/projects/freemarker/files/freemarker/2.3.20/freemarker-2.3.20.tar.gz/download">2.3.20</a></li>
+    </ul>
+  </section>
+
+  <section class="sidebar">
+    <h1>Community</h1>
+    <ul>
+      <li><a href="https://sourceforge.net/p/freemarker/bugs/new/" rel="nofollow">Report a bug</a></li>
+      <li><a href="https://stackoverflow.com/questions/tagged/freemarker" rel="nofollow">Ask a question on Sourceforge</a></li>
+      <li><a href="mailing-lists.html">Mailing list</a></li>
+      <li><a href="https://twitter.com/freemarker">Twitter</a></li>
+    </ul>
+  </section>
+
 
 </#macro>
 
