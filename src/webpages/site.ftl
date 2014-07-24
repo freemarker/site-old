@@ -10,7 +10,7 @@
     <meta name="Keywords" content="FreeMarker, template, templates, HTML, HTML template, page template, text, macro, macros, preprocessor, MVC, view, servlet, Java, free, open source, JSP, taglib, Velocity, WebMacro">
     <meta name="Description" content="Template engine for generating text (HTML, source code, e-mails, config files, etc.) that depends on changing data. MVC, highly configurable, macros, Free.">
     <meta name="verify-v1" content="OU7KNU7q+wGizVoaX/MNUo/tZ5o5RC06VfCjQIRRJu4=">
-    <link rel="stylesheet" type="text/css" href="site.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta property="og:title" content="${.node.page.@title?html} – FreeMarker Java Template Engine">
     <meta property="og:locale" content="en_US">
     <#--
@@ -34,7 +34,7 @@
         <h1 class="page-title">${.node.page.@title?html}</h1>
         <#recurse  using "content.ftl" />
       </main> -->
-  
+
       <#-- footer
       <footer class="page-footer" role="contentinfo">
         <@footer />
@@ -48,6 +48,7 @@
   <#assign logoImage = "logo_e0e0e0.png" />
   <a class="logo-link" href="${deployUrl?html}">FreeMarker</a>
   <@parentNav />
+  <@sectionNav />
 </#macro>
 
 <#macro parentNav activeTab="Overview">
@@ -66,15 +67,15 @@
   </nav><#t>
 </#macro>
 
-<#macro sectionNav>
+<#macro sectionNav activeTab="Overview">
   <#local links = [
     { "title": "Overview",      "url": "index.html" },
     { "title": "Features",      "url": "index.html" },
     { "title": "Report a bug",  "url": "index.html" },
     { "title": "Features",      "url": "index.html" }
   ]/>
-  
-  <nav class="category-nav" role="navigation"><#t>
+
+  <nav class="section-nav" role="navigation"><#t>
     <ul><#t>
       <#list links as link>
         <li><a href="${link.url}"<#if activeTab == link.title> class="active"</#if>>${link.title}</a></li><#t>
@@ -97,7 +98,7 @@
   <div class="copyright">
     Page last generated: <time datetime="${timeStamp?iso_utc}" title="${timeStamp?string.full}">${properties.timeStamp}</time><br>
     All content on this page is copyrighted by the FreeMarker project.<br>
-  
+
     <#if !properties["site.offline"]??>
       <a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=794&amp;type=1" alt="SourceForge Logo"></a>
     <#else>
