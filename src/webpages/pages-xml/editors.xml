@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <page title="Editor/IDE plugins">
   <headsection>
     <downloadWarnings />
@@ -16,20 +16,20 @@
   </headsection>
   <sections>
     <section title="The plugins">
-      <p>Anybody wants to improve these syntax highlights is welcome!</p>
-      <table border="0" cellspacing="2" cellpadding="4">
-        <tr valign="top" align="center">
-          <th align="left" class="cell">Editor or IDE</th>
-          <th class="cell">Features</th>
-          <th class="cell">Version</th>
-          <th class="cell">File</th>
+      <p>Anybody who wants to improve these syntax highlights is welcome!</p>
+      <table class="shaded-table">
+        <tr>
+          <th>Editor or IDE</th>
+          <th>Features</th>
+          <th>Version</th>
+          <th>File</th>
         </tr>
-        <tr valign="top" align="center">
-          <td align="left" class="cell">Eclipse</td>
-          <td class="cell">Syntax highlight, syntax error indicator,
+        <tr>
+          <td>Eclipse</td>
+          <td>Syntax highlight, syntax error indicator,
             code completion for macro names and bean property names.
           </td>
-          <td class="cell" colspan="2">Part of the JBoss Tools Project. Install like this:
+          <td colspan="2">Part of the JBoss Tools Project. Install like this:
             <ol>
               <li><p>
                 In Eclipse, "Help" / "Eclipse Marketplace...", search for "JBoss Tools", "Install".
@@ -49,63 +49,63 @@
             </ol>
           </td>
         </tr>
-        <tr valign="top" align="center">
-          <td align="left" class="cell">Emacs</td>
-          <td class="cell">Syntax highlight, indentation, block folding, some code navigation. Emacs major-mode for editing Web templates, includes FreeMarker support among others.</td>
-          <td class="cell"  colspan="2"><a href="http://web-mode.org/">The homepage of web-mode.el</a></td>
+        <tr>
+          <td>Emacs</td>
+          <td>Syntax highlight, indentation, block folding, some code navigation. Emacs major-mode for editing Web templates, includes FreeMarker support among others.</td>
+          <td colspan="2"><a href="http://web-mode.org/">The homepage of web-mode.el</a></td>
         </tr>
-        <tr valign="top" align="center">
-          <td align="left" class="cell">Eclipse (tried with 3.x)</td>
-          <td class="cell">FreeMarker documentation in the Eclipse help system.<br />
+        <tr>
+          <td>Eclipse (tried with 3.x)</td>
+          <td>FreeMarker documentation in the Eclipse help system.<br />
               Requires FreeMarker 2.3rc1 (or later), or 2.2.6 (or later) from the 2.2.x series</td>
-          <td class="cell">2004-03-13</td>
-          <td class="cell"><a href="download/editor/fm-eclipse-help.tar.gz">fm-eclipse-help.tar.gz</a></td>
+          <td>2004-03-13</td>
+          <td><a href="download/editor/fm-eclipse-help.tar.gz">fm-eclipse-help.tar.gz</a></td>
         </tr>
-        <tr valign="top" align="center">
-          <td align="left" class="cell">Emacs (tried with 20.7)</td>
-          <td class="cell">Syntax highlight</td>
-          <td class="cell">0.1</td>
-          <td class="cell"><a href="download/editor/ftl.el">ftl.el</a></td>
+        <tr>
+          <td>Emacs (tried with 20.7)</td>
+          <td>Syntax highlight</td>
+          <td>0.1</td>
+          <td><a href="download/editor/ftl.el">ftl.el</a></td>
         </tr>
-        <tr valign="top" align="center">
-          <td align="left" class="cell">Kate and KWrite (tried with Kate 2.5.10 and 3.2)</td>
-          <td class="cell">Syntax highlight</td>
-          <td class="cell">2009-08-08</td>
-          <td class="cell"><a href="download/editor/kwriteftl.tar.gz">kwriteftl.tar.gz</a></td>
+        <tr>
+          <td>Kate and KWrite (tried with Kate 2.5.10 and 3.2)</td>
+          <td>Syntax highlight</td>
+          <td>2009-08-08</td>
+          <td><a href="download/editor/kwriteftl.tar.gz">kwriteftl.tar.gz</a></td>
         </tr>
-        <tr valign="top" align="center">
-          <td align="left" class="cell">NetBeans 6.0 or later</td>
-          <td class="cell">Syntax highlight, code completion, template navigation</td>
-          <td class="cell" colspan="2">Downloadable from the NetBeans plugins
+        <tr>
+          <td>NetBeans 6.0 or later</td>
+          <td>Syntax highlight, code completion, template navigation</td>
+          <td colspan="2">Downloadable from the NetBeans plugins
           site.
           <br /><a href="http://plugins.netbeans.org/PluginPortal/faces/PluginDetailPage.jsp?pluginid=3755">NetBeans plugin download page...</a></td>
         </tr>
-        <tr valign="top" align="center">
-          <td align="left" class="cell">TextPad 4 or later</td>
-          <td class="cell">Syntax highlight</td>
-          <td class="cell">2003-03-24</td>
-          <td class="cell"><a href="download/editor/textpadftl.zip">textpadftl.zip</a></td>
+        <tr>
+          <td>TextPad 4 or later</td>
+          <td>Syntax highlight</td>
+          <td>2003-03-24</td>
+          <td><a href="download/editor/textpadftl.zip">textpadftl.zip</a></td>
         </tr>
-        <tr valign="top" align="center">
-          <td align="left" class="cell">Vim ("Vi IMproved")</td>
-          <td class="cell">Syntax highlight</td>
-          <td class="cell">2011-10-07</td>
-	  <td class="cell"><a href="download/editor/ftl.vim">ftl.vim</a></td>
+        <tr>
+          <td>Vim ("Vi IMproved")</td>
+          <td>Syntax highlight</td>
+          <td>2011-10-07</td>
+          <td><a href="download/editor/ftl.vim">ftl.vim</a></td>
         </tr>
       </table>
     </section>
     <section title="Products that support FreeMarker out-of-the-box">
-      <table border="0" cellpadding="4">
-        <tr valign="top">
+      <table>
+        <tr>
           <td><a href="http://www.jetbrains.com/idea/">IntelliJ&#160;IDEA&#160;8.0</a></td>
           <td>A well-known feature-rich commercial Java IDE.</td>
         </tr>
-        <tr valign="top">
+        <tr>
           <td><a href="http://www.jedit.org">jEdit&#160;4.1</a></td>
           <td>jEdit is a Free programmer's text editor written in Java.
           It is highly customizable, extensible, and has an easy-to-use interface.</td>
         </tr>
-        <tr valign="top">
+        <tr>
           <td><a href="http://www.modelworks.com">SitePad&#160;Pro&#160;6</a></td>
           <td>SitePad Pro is an Integrated Development Environment (IDE) for Java, HTML, VRML and other files. It's commercial software.</td>
         </tr>

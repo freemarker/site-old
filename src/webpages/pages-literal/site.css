@@ -1,40 +1,157 @@
-BODY {
-  background-color: #ffffff;
-  font-size: 10pt; font-family: Arial, sans-serif;
-  color: #000000
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-TABLE {font-size: 10pt; font-family: Arial, sans-serif;} /* Fix Opera 6.x bug */
-P {font-size: 10pt; font-family: Arial, sans-serif;} /* Fix Netscape 4.x bug */
-TD {font-size: 10pt; font-family: Arial, sans-serif;} /* Fix Netscape 4.x bug */
-TH {font-size: 10pt; font-family: Arial, sans-serif;} /* Fix Netscape 4.x bug */
 
-SPAN.pageTitle {
-  font-size: 22pt; font-family: Arial, sans-serif; font-weight: bold;
+html {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+nav,
+main,
+footer {
+  display: block;
+}
+
+img {
+  border: 0;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #808080;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 4px;
+  vertical-align: top;
+}
+
+h1, h2, h3 {
   color: #0050B2;
+  margin: 24px 0 12px;
+  line-height: 1;
 }
 
-H2 {
-  font-size: 12pt; font-family: Arial, sans-serif; font-weight: bold; font-style: italic;
+
+/* shaded table */
+.shaded-table th,
+.shaded-table td {
+  border: 1px solid #FFF;
+  text-align: center;
+}
+
+.shaded-table th:first-child,
+.shaded-table td:first-child {
+  text-align: left;
+}
+
+.shaded-table th {
+  background-color: #C0C0C0;
+}
+
+.shaded-table td {
+  background-color: #E0E0E0;
+}
+
+/* page wrapper */
+.page-wrapper {
+  padding: 20px;
+}
+
+
+/* table of contents */
+.table-of-contents {
+  background-color: #E0E0E0;
+  border: 1px solid #000;
+  float: left;
+  font-size: 12px;
+  padding: 10px;
+  width: 20%;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.table-of-contents ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table-of-contents > ul > li {
+  margin-top: 10px;
+}
+
+.table-of-contents li a {
+  display: block;
+  font-weight: normal;
   color: #0050B2;
-  margin-top: 18pt; margin-bottom: 4pt
+  background: url(images/bullet_e0e0e0.png) 0 4px no-repeat;
+  padding-left: 10px;
 }
 
-H3 {
-  font-size: 10pt; font-family: Arial, sans-serif; font-weight: normal; font-style: italic;
-  color: #0050B2;
-  margin-top: 12pt; margin-bottom: 0pt
+.table-of-contents li a:hover {
+  text-decoration: underline;
 }
 
-A{color: #808080; text-decoration:none}
-A:hover{text-decoration: underline}
-A:visited{color: #808080;}
-A.nav {text-decoration: none;  COLOR: #0050B2;}
-A.nav:visited {COLOR: #0050B2;}
-A.nav:hover{text-decoration: underline}
+.table-of-contents a.logo {
+  display: block;
+  text-align: center;
+}
 
-TD.footnote{font-style: italic; color: #404040}
+/* main */
+.page-main {
+  float: left;
+  width: 80%;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
 
-TH.cell{background-color: #C0C0C0}
-TD.cell{background-color: #E0E0E0}
+.page-main .page-title {
+  font-size: 30px;
+  border-bottom: 1px solid #333;
+  text-align: right;
+  margin: 0;
+}
 
-.warning {color: #B00}
+/* footer */
+.page-footer {
+  border-top: 1px solid #C0C0C0;
+  clear: both;
+  padding-top: 10px;
+}
+
+.page-footer .report {
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+.page-footer .copyright {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
