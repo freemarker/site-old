@@ -32,7 +32,7 @@
           <td colspan="2">Part of the JBoss Tools Project. Install like this:
             <ol>
               <li><p>
-                In Eclipse, "Help" / "Eclipse Marketplace...", search for "JBoss Tools", "Install".
+                In Eclipse, "Help" / "Eclipse Marketplace…", search for "JBoss Tools", "Install".
                 A tree of checkboxes will appear, uncheck all (by unchecking the root) except "FreeMarker IDE".
                 (On old Eclipse you may have to use the
                 <a href="http://www.jboss.org/tools/download/">JBoss Tools download page</a> instead.)
@@ -78,7 +78,7 @@
           <td>Syntax highlight, code completion, template navigation</td>
           <td colspan="2">Downloadable from the NetBeans plugins
           site.
-          <br /><a href="http://plugins.netbeans.org/PluginPortal/faces/PluginDetailPage.jsp?pluginid=3755">NetBeans plugin download page...</a></td>
+          <br /><a href="http://plugins.netbeans.org/PluginPortal/faces/PluginDetailPage.jsp?pluginid=3755">NetBeans plugin download page…</a></td>
         </tr>
         <tr>
           <td>TextPad 4 or later</td>

@@ -6,11 +6,11 @@
     <section title="27 June 2013: FreeMarker 2.3.20 was released">
       <p>
         This version comes with better error messages, better boolean formatting, higher multi-core performance, and many other smaller improvements and fixes.
-        See <a href="docs/versions_2_3_20.html">all the changes here...</a>
+        See <a href="docs/versions_2_3_20.html">all the changes here…</a>
       </p>
       
-      <p><a href="http://sourceforge.net/projects/freemarker/files/freemarker/2.3.20/freemarker-2.3.20.tar.gz/download">Download it here...</a>
-      (GAE-compatible binary <a href="http://sourceforge.net/projects/freemarker/files/freemarker/2.3.20/freemarker-gae-2.3.20.jar/download">here...</a>)</p>
+      <p><a href="http://sourceforge.net/projects/freemarker/files/freemarker/2.3.20/freemarker-2.3.20.tar.gz/download">Download it here…</a>
+      (GAE-compatible binary <a href="http://sourceforge.net/projects/freemarker/files/freemarker/2.3.20/freemarker-gae-2.3.20.jar/download">here…</a>)</p>
     </section>
       
   </section>
@@ -54,7 +54,7 @@
     </p>
     <p>
       FreeMarker is <a href="http://www.fsf.org/philosophy/free-sw.html">Free</a>, with BSD-style license.
-      See the license <a href="docs/app_license.html">here...</a>
+      See the license <a href="docs/app_license.html">here…</a>
     </p>
     <p>
       Read more <a href="features.html">feature highlights</a>.

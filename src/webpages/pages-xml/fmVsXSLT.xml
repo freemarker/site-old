@@ -6,7 +6,7 @@
 
 <page title="FreeMarker vs. XSLT">
   <headsection>
-    <p><b>Disclaimer: This page is OLD, and had to be reviewed. Thus no links points to it from our homepage anymore...</b></p>
+    <p><b>Disclaimer: This page is OLD, and had to be reviewed. Thus no links points to it from our homepage anymore…</b></p>
     <p>
      FreeMarker 2.3 introduced some powerful new facilities for XML processing. You can drop XML documents into the data model, and templates can pull data from them in a variety of ways, such as with XPath expressions. See the <a href="docs/xgui.html">appropriate manual section</a> for a detailed introduction. Here, we contrast FreeMarker, as an XML transformation tool with the much better-known XSLT stylesheet approach promulgated by the Worldwide Web Consortium (W3C).
     </p>
