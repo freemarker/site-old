@@ -6,6 +6,7 @@
   <name>FreeMarker Site</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <lesscssVersion>1.7.0.1.1</lesscssVersion>
   </properties>
   <dependencies>
     <dependency>
@@ -21,7 +22,7 @@
     <dependency>
 	  <groupId>org.lesscss</groupId>
 	  <artifactId>lesscss-maven-plugin</artifactId>
-  	  <version>1.7.0.1.1</version>
+  	  <version>${lesscssVersion}</version>
     </dependency>
   </dependencies>
   <build>
@@ -38,7 +39,7 @@
       <plugin>
         <groupId>org.lesscss</groupId>
         <artifactId>lesscss-maven-plugin</artifactId>
-        <version>1.7.0.1.1</version>
+        <version>${lesscssVersion}</version>
         <configuration>
           <sourceDirectory>${project.basedir}/src/main/less</sourceDirectory>
           <outputDirectory>${project.build.directory}/${project.build.finalName}/css</outputDirectory>
