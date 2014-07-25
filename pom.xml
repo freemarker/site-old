@@ -3,7 +3,7 @@
   <groupId>org.freemarker</groupId>
   <artifactId>site</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>freemarker site</name>
+  <name>FreeMarker Site</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -25,15 +25,44 @@
     </dependency>
   </dependencies>
   <build>
-    <pluginManagement>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.lesscss</groupId>
+        <artifactId>lesscss-maven-plugin</artifactId>
+        <version>1.7.0.1.1</version>
+        <configuration>
+          <sourceDirectory>${project.basedir}/src/main/less</sourceDirectory>
+          <outputDirectory>${project.build.directory}/${project.build.finalName}/css</outputDirectory>
+          <compress>true</compress>
+          <outputFileFormat>{fileName}.min.css</outputFileFormat>
+          <includes>
+            <include>styles.less</include>
+          </includes>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
         <version>1.7</version>
         <executions>
           <execution>
-            <phase>compile</phase>
+            <phase>package</phase>
             <configuration>
               <target>
                 <!-- http://maven.apache.org/plugins/maven-antrun-plugin/examples/classpaths.html -->
@@ -42,7 +71,7 @@
                 <fmpp
                    sourceroot="src"
                    data="textColor:blue"
-                   outputroot="out"
+                   outputroot="build"
                    logfile="log.fmpp"
                  />
                </target>
@@ -54,6 +83,5 @@
         </executions>
       </plugin>
     </plugins>
-    </pluginManagement>
   </build>
 </project>
