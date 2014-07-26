@@ -13,9 +13,6 @@
     <link rel="stylesheet" type="text/css" href="styles.min.css">
     <meta property="og:title" content="${.node.page.@title?html} – FreeMarker Java Template Engine">
     <meta property="og:locale" content="en_US">
-    <#--
-    <meta property="og:url" content="${deployUrl}">
-    <link rel="canonical" href="${deployUrl}">-->
     <title>${.node.page.@title?html} – FreeMarker Java Template Engine</title>
   </head>
   <body>
@@ -31,7 +28,7 @@
       <#-- table of contents
       <nav class="table-of-contents" role="navigation">
         <#visit project_node using [toc] />
-      </nav> -->
+      </nav>-->
 
       <#-- content -->
       <main class="page-main" role="main">
@@ -57,15 +54,16 @@
 
 <#macro parentNav activeTab="Overview">
   <#local links = [
-    { "title": "Overview",      "url": "index.html" },
-    { "title": "Download",      "url": "freemarkerdownload.html" },
-    { "title": "Documentation", "url": "docs/index.html" }
+    { "title": "Overview",      "url": "index.html",              "key": "Overview" },
+    { "title": "Download",      "url": "freemarkerdownload.html", "key": "Download FreeMarker" },
+    { "title": "Manual",        "url": "docs/index.html",         "key": "Manual" },
+    { "title": "Java API",      "url": "docs/api/index.html",     "key": "Java API" }
   ]/>
 
   <nav class="header-nav primary-nav" role="navigation"><#t>
     <ul><#t>
       <#list links as link>
-        <li><a href="${link.url}"<#if activeTab == link.title> class="active"</#if>>${link.title}</a></li><#t>
+        <li><a href="${link.url}"<#if .node.page.@title == link.key> class="active"</#if>>${link.title}</a></li><#t>
       </#list>
     </ul><#t>
   </nav><#t>
@@ -76,14 +74,13 @@
     { "title": "Overview",      "url": "index.html" },
     { "title": "Features",      "url": "features.html" },
     { "title": "Editor/IDE plugins",      "url": "editors.html" },
-    { "title": "Report a bug",  "url": "index.html" },
-    { "title": "Features",      "url": "index.html" }
+    { "title": "Report a bug",  "url": "index.html" }
   ]/>
 
   <nav class="header-nav secondary-nav" role="navigation"><#t>
     <ul><#t>
       <#list links as link>
-        <li><a href="${link.url}"<#if activeTab == link.title> class="active"</#if>>${link.title}</a></li><#t>
+        <li><a href="${link.url}"<#if .node.page.@title == link.title> class="active"</#if>>${link.title}</a></li><#t>
       </#list>
     </ul><#t>
   </nav><#t>
