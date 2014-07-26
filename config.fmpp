@@ -1,0 +1,12 @@
+sourceEncoding: UTF-8
+outputEncoding: UTF-8
+urlEscapingCharset: UTF-8
+sourceRoot: src
+caseSensitive
+borders: [
+  header("<#import '/templates/page.ftl' as page />", **/*.html)
+]
+modes: [
+  copy(sitemap.xml)
+  ignore(/less/, /images/, /webpages/, /templates/)
+]
