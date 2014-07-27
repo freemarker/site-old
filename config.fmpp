@@ -3,12 +3,13 @@ outputEncoding: UTF-8
 urlEscapingCharset: UTF-8
 sourceRoot: src
 caseSensitive
-datetimeFormat: yyyy-MM-dd HH:mm:ss z
+datetimeFormat: "yyyy-MM-dd HH:mm:ss z"
 logFile: log.fmpp
+turns: 	[turn(2, index.html), turn(3, sitemap.xml)]
 borders: [
   header("<#import '/templates/page.ftl' as page />", **/*.html)
 ]
 modes: [
-  copy(sitemap.xml)
+  copy(crossdomain.xml, robots.txt, humans.txt)
   ignore(/less/, /images/, /webpages/, /templates/)
 ]

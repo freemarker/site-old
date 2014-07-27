@@ -9,7 +9,6 @@
     <lesscssVersion>1.7.0.1.1</lesscssVersion>
     <fmppVersion>0.9.14</fmppVersion>
     <freemarkerVersion>2.3.20</freemarkerVersion>
-    <javaVersion>1.8</javaVersion>
   </properties>
   <dependencies>
     <dependency>
@@ -30,15 +29,6 @@
   </dependencies>
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.1</version>
-        <configuration>
-          <source>${javaVersion}</source>
-          <target>${javaVersion}</target>
-        </configuration>
-      </plugin>
       <plugin>
         <groupId>org.lesscss</groupId>
         <artifactId>lesscss-maven-plugin</artifactId>
@@ -67,17 +57,17 @@
         <executions>
           <execution>
             <phase>generate-resources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
             <configuration>
               <target>
                 <!-- http://maven.apache.org/plugins/maven-antrun-plugin/examples/classpaths.html -->
                 <property name="compile_classpath" refid="maven.compile.classpath"/>
-                <taskdef name="fmpp" classname="fmpp.tools.AntTask"  classpath="${compile_classpath}" />
-                <fmpp configuration="./" outputroot="${project.build.directory}/${project.build.finalName}" />
+                <taskdef name="fmpp" classname="fmpp.tools.AntTask" classpath="${compile_classpath}" />
+                <fmpp configuration="./" outputRoot="${project.build.directory}/${project.build.finalName}/" />
                </target>
             </configuration>
-            <goals>
-              <goal>run</goal>
-            </goals>
           </execution>
         </executions>
       </plugin>
