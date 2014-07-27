@@ -1,5 +1,3 @@
-<#ftl strip_text=true />
-
 <#---
   @namespace page
 -->
@@ -13,6 +11,8 @@
 
 <#---
   @param title
+  @param primaryTab
+  @param secondaryTab
 -->
 <#macro page title="" primaryTab="index" secondaryTab="overview">
   <@collectPage />

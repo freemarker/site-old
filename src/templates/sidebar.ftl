@@ -3,6 +3,9 @@
 -->
 
 
+<#---
+  Sidebar for page
+-->
 <#macro sidebar>
   <ul class="sidebar">
     <li>Latest release
