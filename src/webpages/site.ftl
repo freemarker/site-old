@@ -73,7 +73,7 @@
   <#local links = [
     { "title": "Overview",      "url": "index.html" },
     { "title": "Features",      "url": "features.html" },
-    { "title": "Editor/IDE plugins",      "url": "editors.html" },
+    { "title": "Editor/IDE plugins",      "url": "plugins.html" },
     { "title": "Report a bug",  "url": "index.html" }
   ]/>
 

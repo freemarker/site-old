@@ -4,10 +4,17 @@
   @namespace page
 -->
 
+
+<#---
+  Imports
+-->
+<#import "header.ftl" as header />
+
+
 <#---
   @param title
 -->
-<#macro page title="">
+<#macro page title="" primaryTab="index" secondaryTab="overview">
   <@collectPage />
   <#compress>
     <!doctype html>
@@ -25,11 +32,9 @@
         <link rel="stylesheet" href="${pp.pathTo('/css/styles.min.css')}?ts=${pp.now?long}" type="text/css">
       </head>
       <body>
-        <@header />
-        <main class="page-main" role="main">
-          <div class="page-width">
-</#compress><#nested /><#compress>
-          </div>
+        <@header.header primaryTab=primaryTab secondaryTab=secondaryTab />
+        <main class="page-main page-width" role="main">
+          </#compress><#nested /><#compress>
         </main>
         <@footer />
       </body>
@@ -54,23 +59,11 @@
 
 
 <#---
-  Page header
--->
-<#macro header>
-  <header class="page-header">
-    <div class="page-width">
-      Headerrr
-    </div>
-  </header>
-</#macro>
-
-
-<#---
   Page footer
 -->
 <#macro footer>
-  <footer class="page-footer">
-    <div class="page-width">
+  <div class="page-width">
+    <footer class="page-footer">
       <div class="last-updated">
         <#setting time_zone = "UTC" />
         Page last generated: <time datetime="${pp.now?iso_utc}" title="${pp.now?string.full}">${pp.now}</time>
@@ -78,6 +71,6 @@
       <div class="copyright">
         © ${pp.now?string('YYYY')} The FreeMarker Project. All rights reserved.
       </div>
+    </footer>
     </div>
-  </footer>
 </#macro>
