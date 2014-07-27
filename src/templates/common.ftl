@@ -11,3 +11,7 @@
 
 <#import "ui.ftl" as ui />
 <#global ui = ui />
+
+
+<#import "sidebar.ftl" as sidebar />
+<#global sidebar = sidebar />

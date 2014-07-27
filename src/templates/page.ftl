@@ -64,13 +64,25 @@
 <#macro footer>
   <div class="page-width">
     <footer class="page-footer">
+      <div class="copyright">
+        © 1999—${pp.now?string('YYYY')} The FreeMarker Project. All rights reserved.
+        <a href="docs/app_license.html">License</a>
+        <a href="about-us.html">About us</a>
+      </div>
+      <ul class="social-media-footer">
+        <li class="twitter"><a href="https://twitter.com/freemarker">Twitter</a></li>
+        <li class="github"><a href="https://github.com/freemarker">Github</a></li>
+        <li class="stack-overflow"><a href="https://stackoverflow.com/questions/tagged/freemarker">Stack Overflow</a></li>
+      </ul>
+      <#--
       <div class="last-updated">
         <#setting time_zone = "UTC" />
         Page last generated: <time datetime="${pp.now?iso_utc}" title="${pp.now?string.full}">${pp.now}</time>
       </div>
       <div class="copyright">
-        © ${pp.now?string('YYYY')} The FreeMarker Project. All rights reserved.
+        © 1999—${pp.now?string('YYYY')} The FreeMarker Project. All rights reserved.
       </div>
+      -->
     </footer>
     </div>
 </#macro>
