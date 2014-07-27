@@ -21,6 +21,7 @@
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+
     font-size: 24px;
     font-weight: 100;
     color: @text-color;
@@ -30,21 +31,22 @@
 }
 
 .header-nav {
+
   .primary-nav& {
     display: inline-block;
     font-size: 16px;
   }
 
   .secondary-nav& {
-    @media (min-width: @screen-sm-min) {
-      text-align: left;
-    }
-
     border-top: 1px solid @gray-border;
     border-bottom: 1px solid @gray-border;
     padding: 0;
     margin-top: 12px;
     font-size: 14px;
+
+    @media (min-width: @screen-sm-min) {
+      text-align: left;
+    }
   }
 
   ul {
@@ -88,7 +90,7 @@
 
     &:focus,
     &:active {
-      color: lighten(@link-color-hover, 5%);
+      color: @link-color-focus;
     }
 
     &.active {
