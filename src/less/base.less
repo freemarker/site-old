@@ -48,11 +48,14 @@ a {
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   color: @link-color;
+  &:hover {
+    color: @link-color-hover;
+  }
+  &:focus {
+    color: lighten(@link-color-hover, 5%);
+  }
 }
 
-a:hover {
-  color: @link-color-hover;
-}
 
 table {
   border-spacing: 0;

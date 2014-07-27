@@ -66,11 +66,13 @@
     }
     &:focus,
     &:active {
-      color: lighten(@link-color, 20%);
-      text-shadow: 0 0 0 #000;
+      color: lighten(@link-color-hover, 5%);
     }
     &.active {
       color: @link-color;
+      &:hover {
+        color: @link-color-hover;
+      }
     }
   }
 }
