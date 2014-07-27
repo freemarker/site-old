@@ -9,3 +9,20 @@
     clear: both;
   }
 }
+
+
+.social-media-icons() {
+  &:before {
+    font-family: FontAwesome;
+    margin-right: 3px;
+  }
+  &.github:before {
+    content: @fa-var-github;
+  }
+  &.twitter:before {
+    content: @fa-var-twitter;
+  }
+  &.stack-overflow:before {
+    content: @fa-var-stack-overflow;
+  }
+}
