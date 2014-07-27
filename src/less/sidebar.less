@@ -1,7 +1,50 @@
-.social-media-sidebar {
-
-  a {
-    .social-media-icons();
+.sidebar {
+  list-style-type: none;
+  padding: 36px 0 0 0;
+  margin: 0;
+  float: left;
+  width: 20%;
+  line-height: 2;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  > li {
+    margin-bottom: 12px;
+  }
+  li {
+    font-weight: 400;
+    a {
+      font-weight: 100;
+    }
   }
 
+}
+
+.download-sidebar {
+  a {
+    display: block;
+    .icon();
+    &.download:before {
+      content: @fa-var-download;
+    }
+    &.change-log:before {
+      content: @fa-var-code;
+    }
+  }
+
+}
+
+.social-media-sidebar {
+  a {
+    display: block;
+    .social-media-icons();
+    &.bug:before {
+      content: @fa-var-bug;
+    }
+    &.mailing-list:before {
+      content: @fa-var-envelope-o;
+    }
+  }
 }

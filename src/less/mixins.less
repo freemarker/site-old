@@ -10,12 +10,15 @@
   }
 }
 
-
-.social-media-icons() {
+.icon() {
   &:before {
     font-family: FontAwesome;
     margin-right: 3px;
   }
+}
+
+.social-media-icons() {
+  .icon();
   &.github:before {
     content: @fa-var-github;
   }

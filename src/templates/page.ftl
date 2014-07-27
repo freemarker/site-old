@@ -33,10 +33,12 @@
       </head>
       <body>
         <@header.header primaryTab=primaryTab secondaryTab=secondaryTab />
-        <main class="page-main page-width" role="main">
+        <div class="page-width">
           <@sidebar.sidebar />
-          </#compress><#nested /><#compress>
-        </main>
+          <main class="page-main" role="main">
+            </#compress><#nested /><#compress>
+          </main>
+        </div>
         <@footer />
       </body>
     </html>
