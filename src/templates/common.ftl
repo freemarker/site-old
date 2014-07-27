@@ -4,6 +4,12 @@
 
 
 <#---
+  Settings
+-->
+<#setting time_zone = "UTC" />
+
+
+<#---
   Global imports
 -->
 <#import "page.ftl" as page />

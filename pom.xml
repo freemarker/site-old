@@ -48,12 +48,18 @@
         </configuration>
         <executions>
           <execution>
+            <goals>
+              <goal>compile</goal>
+            </goals>
             <configuration>
               <outputFileFormat>{fileName}.css</outputFileFormat>
             </configuration>
           </execution>
           <execution>
             <id>minify</id>
+            <goals>
+              <goal>compile</goal>
+            </goals>
             <configuration>
               <compress>true</compress>
               <outputFileFormat>{fileName}.min.css</outputFileFormat>

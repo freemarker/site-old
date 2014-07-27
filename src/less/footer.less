@@ -1,20 +1,55 @@
 .page-footer {
   border-top: 1px solid @gray-border;
-  padding: 24px 0;
-  display: flex;
-  justify-content: space-between;
+  padding: 12px 0 24px;
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright {
+    text-align: center;
+    border-top: 1px solid @gray-border;
+    margin: 12px 0 0;
+    padding: 24px 0 0;
+  }
+  .last-updated {
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+  }
 }
 
+.legal-extra {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    a {
+      padding: 3px 6px;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+
+}
 
 .social-media-footer {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
   li {
     display: inline-block;
     a {
       padding: 3px 6px;
       .social-media-icons();
+      &:first-child {
+        padding-right: 0;
+      }
     }
   }
 }

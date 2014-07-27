@@ -7,7 +7,7 @@
   Sidebar for page
 -->
 <#macro sidebar>
-  <ul class="sidebar">
+  <ul class="sidebar" role="complementary">
     <li>Latest release
       <ul class="download-sidebar"><#t />
         <li><a class="download" href="http://sourceforge.net/projects/freemarker/files/freemarker/2.3.20/freemarker-2.3.20.tar.gz/download">Download 2.3.20</a></li><#t />
