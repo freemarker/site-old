@@ -1,13 +1,21 @@
-
 .page-header {
   padding-top: 18px;
+  text-align: center;
+
+  @media (min-width: @screen-sm-min) {
+    .logo-row {
+      display: flex;
+      align-items: baseline;
+    }
+  }
 
   .logo-link {
-    display: inline-block;
+    flex-shrink: 0;
     font-size: 24px;
     font-weight: 100;
     color: @text-color;
-    margin-right: 8px;
+    padding-right: 24px;
+    display: block;
   }
 }
 
@@ -16,47 +24,66 @@
     display: inline-block;
     font-size: 16px;
   }
+
   .secondary-nav& {
+    @media (min-width: @screen-sm-min) {
+      text-align: left;
+    }
+
     border-top: 1px solid @gray-border;
     border-bottom: 1px solid @gray-border;
-    padding: 8px 0;
+    padding: 0;
     margin-top: 12px;
     font-size: 14px;
   }
+
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     font-weight: 100;
   }
+
   li {
     display: inline-block;
-    .secondary-nav& {
-      margin-right: 24px;
-    }
-    .secondary-nav&:last-child  {
-      margin-right: 0;
+
+    .primary-nav&:first-child a {
+      padding-left: 0;
     }
 
+    .secondary-nav& a {
+      padding: 12px;
+    }
+
+    .secondary-nav&:first-child a  {
+      padding-left: 0;
+    }
   }
+
   a {
     color: @text-color;
     display: block;
+
     .primary-nav& {
-      padding: 6px 12px;
+      padding: 12px 12px 6px;
     }
+
     .secondary-nav& {
-      padding: 4px 0;
+      padding: 12px 0;
     }
+
     &:hover {
       color: @link-color-hover;
     }
+
     &:focus,
     &:active {
       color: lighten(@link-color-hover, 5%);
     }
+
     &.active {
       color: @link-color;
+
       &:hover {
         color: @link-color-hover;
       }

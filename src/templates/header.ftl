@@ -10,8 +10,10 @@
 -->
 <#macro header primaryTab secondaryTab>
   <header class="page-header page-width">
-    <a class="logo-link" href="index.html" role="banner">FreeMarker</a>
-    <@primaryNav primaryTab=primaryTab />
+    <div class="logo-row">
+      <a class="logo-link" href="index.html" role="banner">FreeMarker</a>
+      <@primaryNav primaryTab=primaryTab />
+    </div>
     <@secondaryNav secondaryTab=secondaryTab />
   </header>
 </#macro>

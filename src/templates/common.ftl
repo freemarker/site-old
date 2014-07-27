@@ -6,7 +6,7 @@
 <#---
   Settings
 -->
-<#setting time_zone = "UTC" />
+<#setting time_zone = "GMT" />
 
 
 <#---
