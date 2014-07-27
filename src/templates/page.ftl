@@ -83,7 +83,7 @@
         </ul><#t />
       </div>
 
-      <p class="copyright">© 1999—${pp.now?string('YYYY')} The FreeMarker Project. All rights reserved.</p>
+      <p class="copyright">© 1999–${pp.now?string('YYYY')} The FreeMarker Project. All rights reserved.</p>
       <p class="last-updated">
         Page last generated: <time datetime="${pp.now?iso_utc}" title="${pp.now?string.full}">${pp.now}</time>
       </div>
