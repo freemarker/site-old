@@ -66,18 +66,18 @@
 -->
 <#macro footer>
   <div class="page-width">
-    <footer class="page-footer">
+    <footer class="page-footer" role="contentinfo">
+      <div class="copyright">
+        <a href="docs/app_license.html">License</a>
+        <a href="about-us.html">About us</a>
+      </div>
       <ul class="social-media-footer"><#t />
         <li><a class="twitter" href="https://twitter.com/freemarker">Twitter</a></li><#t />
         <li><a class="github" href="https://github.com/freemarker">Github</a></li><#t />
         <li><a class="stack-overflow" href="https://stackoverflow.com/questions/tagged/freemarker">Stack Overflow</a></li><#t />
       </ul><#t />
-      <div class="copyright">
-        © 1999—${pp.now?string('YYYY')} The FreeMarker Project. All rights reserved.
-        <a href="docs/app_license.html">License</a>
-        <a href="about-us.html">About us</a>
-      </div>
 
+      <p>© 1999—${pp.now?string('YYYY')} The FreeMarker Project. All rights reserved.</p>
       <#--
       <div class="last-updated">
         <#setting time_zone = "UTC" />

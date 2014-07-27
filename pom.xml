@@ -54,17 +54,22 @@
         <configuration>
           <sourceDirectory>${project.basedir}/src/less</sourceDirectory>
           <outputDirectory>${project.build.directory}/${project.build.finalName}/css</outputDirectory>
-          <compress>true</compress>
-          <outputFileFormat>{fileName}.min.css</outputFileFormat>
           <includes>
             <include>styles.less</include>
           </includes>
         </configuration>
         <executions>
           <execution>
-            <goals>
-              <goal>compile</goal>
-            </goals>
+            <configuration>
+              <outputFileFormat>{fileName}.css</outputFileFormat>
+            </configuration>
+          </execution>
+          <execution>
+            <id>minify</id>
+            <configuration>
+              <compress>true</compress>
+              <outputFileFormat>{fileName}.min.css</outputFileFormat>
+            </configuration>
           </execution>
         </executions>
       </plugin>
