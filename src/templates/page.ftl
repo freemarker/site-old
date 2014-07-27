@@ -35,8 +35,9 @@
         <@header.header primaryTab=primaryTab secondaryTab=secondaryTab />
         <div class="page-width main-wrapper">
           <@sidebar.sidebar />
-          <main class="page-main" role="main">
-            </#compress><#nested /><#compress>
+          <main class="page-main" role="main"></#compress>
+              <#nested />
+            <#compress>
           </main>
         </div>
         <@footer />

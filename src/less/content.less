@@ -10,9 +10,11 @@
   @media (min-width: @screen-sm-min) {
     width: @container-sm;
   }
+
   @media (min-width: @screen-md-min) {
     width: @container-md;
   }
+
   @media (min-width: @screen-lg-min) {
     width: @container-lg;
   }
@@ -20,13 +22,13 @@
 
 .main-wrapper {
   padding-bottom: 48px;
-
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: @screen-sm-min) {
-    display: flex;
+    flex-wrap: nowrap;
   }
 }
-
 
 .page-title {
   padding: 36px 0 18px;
@@ -39,6 +41,29 @@
   font-size: 24px;
 }
 
-.img-border {
+// images
+
+.img-border() {
   border: 1px solid @gray-border;
+}
+
+.img-responsive() {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+// define image width and height for all images above mobile breakpoint
+// this is so if the img loads slowly the content doesn't jerk down
+.img-freemarker-overview {
+  .img-border();
+  .img-responsive();
+
+  display: block;
+  margin: 24px auto;
+
+  @media (min-width: @screen-sm-min) {
+    width: 418px;
+    height: 193px;
+  }
 }
