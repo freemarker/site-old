@@ -5,7 +5,7 @@
 -->
 <#macro header primaryTab secondaryTab>
   <header class="page-header page-width">
-    <a class="logo-link" href="http://freemarker.org" role="banner">FreeMarker</a>
+    <a class="logo-link" href="index.html" role="banner">FreeMarker</a>
     <@primaryNav primaryTab=primaryTab />
     <@secondaryNav secondaryTab=secondaryTab />
   </header>
@@ -19,21 +19,18 @@
   <#-- List of primary navigation links -->
   <#local links = [
     {
-      "title": "Overview",
+      "title": "Home",
       "url": "index.html",
       "key": "index"
-    },
-    {
+    }, {
       "title": "Download",
       "url": "download.html",
       "key": "download"
-    },
-    {
+    }, {
       "title": "Manual",
       "url": "docs/index.html",
       "key": "manual"
-    },
-    {
+    }, {
       "title": "Java API",
       "url": "docs/api/index.html",
       "key": "java-api"
@@ -53,13 +50,11 @@
       "title": "Overview",
       "url": "index.html",
       "key": "overview"
-    },
-    {
+    }, {
       "title": "Features",
       "url": "features.html",
       "key": "features"
-    },
-    {
+    }, {
       "title": "Editor/IDE plugins",
       "url": "editors.html",
       "key": "plugins"

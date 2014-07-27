@@ -7,9 +7,9 @@ datetimeFormat: "yyyy-MM-dd HH:mm:ss z"
 logFile: log.fmpp
 turns: 	[turn(2, index.html), turn(3, sitemap.xml)]
 borders: [
-  header("<#import '/templates/page.ftl' as page />", **/*.html)
+  header("<#import '/templates/common.ftl' as c />", **/*.html)
 ]
 modes: [
-  copy(crossdomain.xml, robots.txt, humans.txt)
+  copy(crossdomain.xml, robots.txt, humans.txt, /fonts/)
   ignore(/less/, /images/, /webpages/, /templates/)
 ]

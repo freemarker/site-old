@@ -27,7 +27,7 @@
         <meta name="format-detection" content="telephone=no">
         <meta property="og:title" content="<#if title?has_content>${title?xhtml}<#else>FreeMarker Java Template Engine</#if>">
         <meta property="og:locale" content="${pp.locale}">
-        <meta name="Description" content="Template engine for generating text (HTML, source code, e-mails, config files, etc.) that depends on changing data. MVC, highly configurable, macros, Free.">
+        <meta name="description" content="Template engine for generating text (HTML, source code, e-mails, config files, etc.) that depends on changing data. MVC, highly configurable, macros, Free.">
         <meta name="verify-v1" content="OU7KNU7q+wGizVoaX/MNUo/tZ5o5RC06VfCjQIRRJu4=">
         <link rel="stylesheet" href="${pp.pathTo('/css/styles.min.css')}?ts=${pp.now?long}" type="text/css">
       </head>
