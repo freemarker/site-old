@@ -5,11 +5,22 @@
   @media (min-width: @screen-sm-min) {
     .logo-row {
       display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -webkit-box-align: baseline;
+      -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
       align-items: baseline;
     }
   }
 
   .logo-link {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
     font-size: 24px;
     font-weight: 100;
