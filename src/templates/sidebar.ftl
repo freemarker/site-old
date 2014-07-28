@@ -20,7 +20,6 @@
       <ul class="social-media-sidebar"><#t />
         <li><a class="icon-before icon-bug" href="http://sourceforge.net/p/freemarker/bugs/">Report a bug</a></li><#t />
         <li><a class="icon-before icon-stack-overflow" href="https://stackoverflow.com/questions/tagged/freemarker">Ask a question</a></li><#t />
-        <li><a class="icon-before icon-mailing-list" href="http://sourceforge.net/p/freemarker/mailman/">Join a mailing list</a></li><#t />
       </ul><#t />
     </li>
     <li>
@@ -28,7 +27,8 @@
       <ul class="social-media-sidebar"><#t />
         <li><a class="icon-before icon-twitter" href="https://twitter.com/freemarker">Twitter</a></li><#t />
         <li><a class="icon-before icon-github" href="https://github.com/freemarker">Github</a></li><#t />
-        <li><a class="icon-before icon-sourceforge" href="http://sourceforge.net/projects/freemarker/">Sourceforge</a></li><#t />
+        <#--<li><a class="icon-before icon-sourceforge" href="http://sourceforge.net/projects/freemarker/">Sourceforge</a></li><#t />-->
+        <li><a class="icon-before icon-mailing-list" href="mailing-lists.html">Mailing lists</a></li><#t />
       </ul><#t />
     </li>
   </ul>

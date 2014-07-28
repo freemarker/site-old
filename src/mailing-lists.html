@@ -1,0 +1,42 @@
+<#ftl strip_text=true />
+
+<#assign pageTitle = "Mailing lists" />
+
+<@page.page title=pageTitle secondaryTab="mailing-lists">
+  <@ui.pageTitle>${pageTitle}</@ui.pageTitle>
+
+
+  <section>
+    <@ui.sectionTitle>Subscription</@ui.sectionTitle>
+
+    <@ui.note title="Note about user mailing list">While the user mailing list still works and questions are answered, it’s more efficient to <a href="https://stackoverflow.com/questions/tagged/freemarker">put your question on Stack Overflow with tag "freemarker"</a>. The FreeMarker maintainers are supposed to track questions with that tag.</@ui.note>
+
+    <p>To discuss wishes, new features, other deeper issues, subscribe to the freemarker-developer mailing list.</p>
+    <#-- @todo: externalize url -->
+    <p><a class="icon-after icon-read-more" href="https://sourceforge.net/p/freemarker/mailman/">View all lists</a></p>
+  </section>
+
+  <#-- archives -->
+  <section>
+    <@ui.sectionTitle>Browse/search the mailing list archives</@ui.sectionTitle>
+
+    <p>Choose mailing list:</p>
+    <#-- @todo: externalize urls -->
+    <ul>
+      <li><a href="http://news.gmane.org/gmane.comp.web.freemarker.user">freemarker-user@lists.sourceforge.net</a></li>
+      <li><a href="http://news.gmane.org/gmane.comp.web.freemarker.devel">freemarker-devel@lists.sourceforge.net</a></li>
+    </ul>
+  </section>
+
+  <#-- news interfaces -->
+  <section>
+    <@ui.sectionTitle>News interfaces</@ui.sectionTitle>
+      <p>All interfaces are two-way (you can both write and read).</p>
+      <#-- @todo: externalize urls -->
+      <ul>
+        <li>For freemarker-user@lists.sourceforge.net: <a href="nntp://news.gmane.org/gmane.comp.web.freemarker.user">nntp://news.gmane.org/gmane.comp.web.freemarker.user</a></li>
+        <li>For freemarker-devel@lists.sourceforge.net: <a href="nntp://news.gmane.org/gmane.comp.web.freemarker.devel">nntp://news.gmane.org/gmane.comp.web.freemarker.devel</a></li>
+      </ul>
+  </section>
+
+</@page.page>

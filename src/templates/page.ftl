@@ -70,12 +70,9 @@
     <footer class="page-footer" role="contentinfo">
       <div class="footer-row">
         <ul class="legal-extra">
-          <li>
-            <a itemprop="license" rel="license" href="docs/app_license.html">License</a>
-          </li>
-          <li>
-            <a href="about-us.html">About us</a>
-          </li>
+          <li><a itemprop="license" rel="license" href="docs/app_license.html">License</a></li>
+          <li><a href="about-us.html">About us</a></li>
+          <li><a href="powered-by-freemarker.html">Powered by FreeMarker</a></li>
         </ul>
         <ul class="social-media-footer"><#t />
           <li><a class="icon-before icon-twitter" href="https://twitter.com/freemarker">Twitter</a></li><#t />
