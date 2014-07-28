@@ -74,7 +74,7 @@ table {
 h1,
 h2,
 h3 {
-  margin: 30px 0 12px;
+  margin: 30px 0 18px;
   line-height: 1;
   font-weight: 100;
 }
@@ -105,15 +105,25 @@ h3 {
   }
 }
 
-
-
-
-
-
+pre,
 code {
   font-weight: normal;
-  font-size: @font-size-base - 1;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+pre {
+  border: 1px solid rgb(204, 255, 204);
+  background-color: rgba(204, 255, 204, 0.2);
+  padding: 6px 12px;
+  margin: 0 0 24px;
+  display: block;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: auto;
+}
+
+code {
+  font-size: @font-size-base - 1;
   background-color: rgba(0, 0, 0, .05);
   color: #c20077;
   padding: 2px 4px;
