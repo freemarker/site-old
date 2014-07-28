@@ -81,7 +81,6 @@
   ]/>
 
   <@_navigation links=links tab=secondaryTab class="secondary-nav" />
-
 </#macro>
 
 
