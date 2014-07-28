@@ -3,7 +3,8 @@
 <#assign pages = pp.s.pages />
 <#list pages as page>
   <url>
-     <loc>${page.url}</loc>
+      <#-- @todo: externalize domain -->
+     <loc>http://freemarker.org/${page.url}</loc>
      <lastmod>${pp.outputFileLastModified(page.outputFile)?iso_utc}</lastmod>
      <changefreq>yearly</changefreq>
      <priority>0.8</priority>
