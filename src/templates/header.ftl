@@ -91,6 +91,10 @@
       "url": "fmpp.html",
       "key": "fmpp",
       "class": "visible-xs" <#-- show different link for mobile -->
+    }, {
+      "title": "Powered by FreeMarker",
+      "url": "powered-by-freemarker.html",
+      "key": "powered-by"
     }<#--, {
       "title": "About us",
       "url": "about-us.html",

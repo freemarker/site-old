@@ -11,5 +11,8 @@ borders: [
 ]
 modes: [
   copy(crossdomain.xml, robots.txt, humans.txt, /fonts/, /images/, /download/)
-  ignore(/less/, /webpages/, /templates/)
+  ignore(/less/, /webpages/, /templates/, powered-by.json)
 ]
+data: {
+  poweredBy: tdd(powered-by.json)
+}
