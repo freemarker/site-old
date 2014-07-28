@@ -28,6 +28,7 @@
       <ul class="social-media-sidebar"><#t />
         <li><a class="icon-before icon-twitter" href="https://twitter.com/freemarker">Twitter</a></li><#t />
         <li><a class="icon-before icon-github" href="https://github.com/freemarker">Github</a></li><#t />
+        <li><a class="icon-before icon-sourceforge" href="http://sourceforge.net/projects/freemarker/">Sourceforge</a></li><#t />
       </ul><#t />
     </li>
   </ul>
