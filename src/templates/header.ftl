@@ -91,11 +91,11 @@
   @param class
 -->
 <#macro _navigation links tab class="">
-  <nav class="header-nav ${class}" role="navigation"><#t>
-    <ul><#t>
+  <nav class="header-nav ${class}" role="navigation"><#t />
+    <ul><#t />
       <#list links as link>
-        <li><a href="${link.url}"<#if tab == link.key> class="active"</#if>>${link.title}</a></li><#t>
+        <li><a href="${link.url}"<#if tab == link.key> class="active"</#if>>${link.title}</a></li><#t />
       </#list>
-    </ul><#t>
-  </nav><#t>
+    </ul><#t />
+  </nav><#t />
 </#macro>
