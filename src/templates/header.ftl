@@ -11,7 +11,7 @@
 <#macro header primaryTab secondaryTab>
   <header class="page-header page-width">
     <div class="logo-row">
-      <a class="logo-link" href="index.html" role="banner">FreeMarker</a>
+      <a class="logo-link" href="index.html" role="banner">&lt;FreeMarker&gt;</a>
       <@primaryNav primaryTab=primaryTab />
     </div>
     <@secondaryNav secondaryTab=secondaryTab />
