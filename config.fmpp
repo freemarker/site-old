@@ -15,4 +15,5 @@ modes: [
 ]
 data: {
   poweredBy: tdd(powered-by.json)
+  downloads: tdd(downloads.json)
 }

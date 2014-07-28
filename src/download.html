@@ -10,17 +10,51 @@
   <p><a class="icon-after icon-read-more" href="docs/app_versions.html">View all change logs</a></p>
 
   <section>
-    <@ui.sectionTitle>2.3.20</@ui.sectionTitle>
-    <p class="callout">Latest stable release, release 2013-06-27. Requires J2SE 1.2 or higher.</p>
-    <#-- @todo: externalize url -->
-    <p><a class="icon-before icon-download"
-      href="http://sourceforge.net/projects/freemarker/files/freemarker/2.3.20/freemarker-2.3.20.tar.gz/download">Download freemarker-2.3.20.tar.gz (2.6 MB)</a></p>
+    <@ui.sectionTitle>Latest release</@ui.sectionTitle>
+    <ul class="latest-releases">
+      <#list downloads.versions as version>
+        <#if version.latest??>
+          <li>${version.version}
+            <ul>
+              <li>${version.description}</li>
+              <#if version.url?? && version.urlText??>
+                <li><a class="icon-before icon-download" href="${version.url}">${version.urlText}</a></li>
+              </#if>
+            </ul>
+          </li>
+        </#if>
+      </#list>
+    </ul>
+  </section>
 
-    <@ui.sectionSubtitle>Dependency management</@ui.sectionSubtitle>
+  <section>
+    <@ui.sectionTitle>Previous releases</@ui.sectionTitle>
 
+    <p>Please visit the <a href="http://sourceforge.net/projects/freemarker/files/">SourceForge download page</a> to download past releases that are not featured here.</p>
+
+    <ul class="latest-releases">
+      <#list downloads.versions as version>
+        <#if !version.latest??>
+          <li>${version.version}
+            <ul>
+              <li>${version.description}</li>
+              <#if version.url?? && version.urlText??>
+                <li><a class="icon-before icon-download" href="${version.url}">${version.urlText}</a></li>
+              </#if>
+            </ul>
+          </li>
+        </#if>
+      </#list>
+    </ul>
+  </section>
+
+  <section>
+    <@ui.sectionTitle>Dependency management</@ui.sectionTitle>
     <@ui.note class="note-warning" title="Note about dependency management">Be sure nothing pulls in an old dependency with groupId “freemarker” (without the “org.”), because then you will end up with two freemarker.jar-s and unpredictable behavior!</@ui.note>
 
     <#-- maven example -->
+    <@ui.sectionSubtitle>Maven example</@ui.sectionSubtitle>
+
     <#assign mavenExample>
 <#-- --><dependency>
 <#-- -->  <groupId>org.freemarker</groupId>
@@ -28,10 +62,13 @@
 <#-- -->  <version>2.3.20</version>
 <#-- --></dependency>
     </#assign>
-    <@ui.sectionh3>Maven example</@ui.sectionh3>
     <pre>${mavenExample?xhtml}</pre>
 
     <#-- google app engine example -->
+    <@ui.sectionSubtitle>Google app engine example</@ui.sectionSubtitle>
+    <#-- @todo: externalize url -->
+    <p>If you need to use FreeMarker on Google App Engine, <a href="http://sourceforge.net/projects/freemarker/files/freemarker/2.3.20/freemarker-gae-2.3.20.jar/download">download the GAE-compatible binary</a>, too. (This is only the binary.)</p>
+
     <#assign gaeExample>
 <#-- --><dependency>
 <#-- -->  <groupId>org.freemarker</groupId>
@@ -39,9 +76,6 @@
 <#-- -->  <version>2.3.20</version>
 <#-- --></dependency>
     </#assign>
-    <@ui.sectionh3>Google app engine example</@ui.sectionh3>
-    <#-- @todo: externalize url -->
-    <p>If you need to use FreeMarker on Google App Engine, <a href="http://sourceforge.net/projects/freemarker/files/freemarker/2.3.20/freemarker-gae-2.3.20.jar/download">download the GAE-compatible binary</a>, too. (This is only the binary.)</p>
     <pre>${gaeExample?xhtml}</pre>
 
     <@ui.sectionh3>Excluding old FreeMarker artifact</@ui.sectionh3>
@@ -64,41 +98,5 @@
     <pre>${exclusionExample?xhtml}</pre>
   </section>
 
-  <#-- 2.2.8 -->
-  <section>
-    <@ui.sectionTitle>2.2.8</@ui.sectionTitle>
-    <p>The latest stable release of the 2.2 series, released on 2004-06-15. Requires J2SE 1.2 or higher.</p>
-    <#-- @todo: externalize url -->
-    <p><a class="icon-before icon-download" href="http://prdownloads.sourceforge.net/freemarker/freemarker-2.2.8.tar.gz">Download freemarker-2.2.8.tar.gz (1.4 MB)</a></p>
-  </section>
 
-  <#-- 2.1.5 -->
-  <section>
-    <@ui.sectionTitle>2.1.5</@ui.sectionTitle>
-    <p>The latest stable release of the 2.1 series. Requires J2SE 1.3 or higher.</p>
-    <#-- @todo: externalize url -->
-    <p><a class="icon-before icon-download" href="http://prdownloads.sourceforge.net/freemarker/freemarker-2.1.5.tar.gz">Download freemarker-2.1.5.tar.gz (909 KB)</a></p>
-  </section>
-
-  <#-- 2.0.3 -->
-  <section>
-    <@ui.sectionTitle>2.0.3</@ui.sectionTitle>
-    <p>The latest stable release of the 2.0 series. Requires J2SE 1.2 or higher.</p>
-    <#-- @todo: externalize url -->
-    <p><a class="icon-before icon-download" href="http://prdownloads.sourceforge.net/freemarker/freemarker2_03.tar.gz">Download freemarker2_03.tar.gz (617 KB)</a></p>
-  </section>
-
-  <#-- 1.x -->
-  <section>
-    <@ui.sectionTitle>1.x</@ui.sectionTitle>
-    <#-- @todo: externalize url -->
-    <p>FreeMarker 1.x continues as separate project: <a class="icon-after icon-read-more" href="http://fm-classic.sourceforge.net/">FreeMarker Classic</a>.</p>
-  </section>
-
-  <#-- other versions -->
-  <section>
-    <@ui.sectionTitle>Other FreeMarker releases</@ui.sectionTitle>
-    <#-- @todo: externalize url -->
-    <p>You can visit the project’s <a href="http://sourceforge.net/projects/freemarker/files/">SourceForge download page</a> to download past releases that are not featured on this download page.</p>
-  </section>
 </@page.page>

@@ -88,7 +88,7 @@
   }
 }
 
-// helpers
+// lists
 .resource-list {
   list-style-type: none;
   margin: 0;
@@ -98,7 +98,6 @@
   }
 }
 
-// definition list
 .powered-by-list {
   dt {
     & + dt a {
@@ -109,6 +108,22 @@
       margin: 12px 0 3px 0;
     }
   }
+}
+
+.latest-releases {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    font-size: 18px;
+  }
+
+  ul {
+    font-size: @font-size-base;
+    margin-bottom: 12px;
+  }
+
 }
 
 .hidden-xs {
