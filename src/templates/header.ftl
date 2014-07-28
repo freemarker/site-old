@@ -30,10 +30,6 @@
       "url": "index.html",
       "key": "index"
     }, {
-      "title": "Download",
-      "url": "download.html",
-      "key": "download"
-    }, {
       "title": "Manual",
       "url": "docs/index.html",
       "key": "manual"
@@ -57,6 +53,10 @@
       "title": "Overview",
       "url": "index.html",
       "key": "overview"
+    }, {
+      "title": "Download Freemarker",
+      "url": "download.html",
+      "key": "download"
     }, {
       "title": "Features",
       "url": "features.html",
