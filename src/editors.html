@@ -5,24 +5,15 @@
 <@page.page title=pageTitle secondaryTab="editors">
   <@ui.pageTitle>${pageTitle}</@ui.pageTitle>
 
-  <p>
-    Below you can find syntax highlight definitions and other plugins for text editors and
-    IDE-s that help you working with FreeMarker.
-    We encourage everybody to develop and send syntax highlight definitions or other
-    plugins for his/her favorite editor or IDE.
-  </p>
-  <p>
-    If you know of another product that should appear
-    here, <a href="mailto:freemarker-devel@lists.sourceforge.net">drop us a
-    note</a>.
-  </p>
+  <p>Below you can find syntax highlight definitions and other plugins for text editors and IDE-s that help you working with FreeMarker. We encourage everybody to develop and send syntax highlight definitions or other plugins for his/her favorite editor or IDE.</p>
+  <p>If you know of another product that should appear here, <a href="mailto:freemarker-devel@lists.sourceforge.net">drop us a note</a>.</p>
 
-  <section class="plugins">
+  <section>
     <@ui.sectionTitle>Plugins</@ui.sectionTitle>
 
     <#-- eclipse -->
     <@ui.sectionSubtitle>Eclipse</@ui.sectionSubtitle>
-    <ul>
+    <ul class="resource-list">
       <li><strong>Features:</strong> Syntax highlighting, syntax error indicator, code completion for macro names and bean property names.</li>
       <li>Installation
         <ol>
@@ -34,78 +25,78 @@
 
     <#-- eclipse help -->
     <@ui.sectionSubtitle>Eclipse FreeMarker documentation (tried with 3.x)</@ui.sectionSubtitle>
-    <ul>
+    <ul class="resource-list">
       <li>FreeMarker documentation in the Eclipse help system. Requires FreeMarker 2.3rc1 (or later), or 2.2.6 (or later) from the 2.2.x series.</li>
       <li><strong>Released:</strong> 2004-03-13</li>
-      <li><a class="icon icon-download" href="download/editor/fm-eclipse-help.tar.gz">Download fm-eclipse-help.tar.gz</a></li>
+      <li><a class="icon-before icon-download" href="download/editor/fm-eclipse-help.tar.gz">Download fm-eclipse-help.tar.gz</a></li>
     </ul>
 
     <#-- emacs -->
     <@ui.sectionSubtitle>Emacs</@ui.sectionSubtitle>
-    <ul>
+    <ul class="resource-list">
       <li><strong>Features:</strong> Syntax highlighting, indentation, block folding, some code navigation. Emacs major-mode for editing Web templates, includes FreeMarker support among others.</li>
-      <li><a class="external-link" href="http://web-mode.org/">Web-mode.el homepage</a></li>
+      <li><a class="icon-before external-link" href="http://web-mode.org/">Web-mode.el homepage</a></li>
     </ul>
 
     <#-- emacs syntax hilighting -->
     <@ui.sectionSubtitle>Emacs (tried with 20.7)</@ui.sectionSubtitle>
-    <ul>
+    <ul class="resource-list">
       <li><strong>Features:</strong> Syntax highlighting</li>
       <li><strong>Version:</strong> 0.1</li>
-      <li><a class="icon icon-download" href="download/editor/ftl.el">Download ftl.el</a></li>
+      <li><a class="icon-before icon-download" href="download/editor/ftl.el">Download ftl.el</a></li>
     </ul>
 
     <#-- kate and kwrite -->
     <@ui.sectionSubtitle>Kate and KWrite (tried with Kate 2.5.10 and 3.2)</@ui.sectionSubtitle>
-    <ul>
+    <ul class="resource-list">
       <li><strong>Features:</strong> Syntax highlighting</li>
       <li><strong>Released:</strong> 2009-08-08</li>
-      <li><a class="icon icon-download" href="http://freemarker.org/download/editor/kwriteftl.tar.gz">Download kwriteftl.tar.gz</a></li>
+      <li><a class="icon-before icon-download" href="http://freemarker.org/download/editor/kwriteftl.tar.gz">Download kwriteftl.tar.gz</a></li>
     </ul>
 
     <#-- netbeans -->
     <@ui.sectionSubtitle>NetBeans 6.0 or later</@ui.sectionSubtitle>
-    <ul>
+    <ul class="resource-list">
       <li><strong>Features:</strong> Syntax highlighting, code completion, template navigation.</li>
-      <li><a class="external-link" href="http://plugins.netbeans.org/PluginPortal/faces/PluginDetailPage.jsp?pluginid=3755">NetBeans plugin download page</a></li>
+      <li><a class="icon-before external-link" href="http://plugins.netbeans.org/PluginPortal/faces/PluginDetailPage.jsp?pluginid=3755">NetBeans plugin download page</a></li>
     </ul>
 
     <#-- textpad -->
     <@ui.sectionSubtitle>TextPad 4 or later</@ui.sectionSubtitle>
-    <ul>
+    <ul class="resource-list">
       <li><strong>Features:</strong> Syntax highlighting</li>
       <li><strong>Released:</strong> 2003-03-24</li>
-      <li><a class="icon icon-download" href="download/editor/textpadftl.zip">Download textpadftl.zip</a></li>
+      <li><a class="icon-before icon-download" href="download/editor/textpadftl.zip">Download textpadftl.zip</a></li>
     </ul>
 
     <#-- vim -->
     <@ui.sectionSubtitle>Vim ("Vi IMproved")</@ui.sectionSubtitle>
-    <ul>
+    <ul class="resource-list">
       <li><strong>Features:</strong> Syntax highlighting</li>
       <li><strong>Released:</strong> 2011-10-07</li>
-      <li><a class="icon icon-download" href="download/editor/ftl.vim">Download ftl.vim</a></li>
+      <li><a class="icon-before icon-download" href="download/editor/ftl.vim">Download ftl.vim</a></li>
     </ul>
   </section>
 
-  <section class="plugins">
+  <section>
     <@ui.sectionTitle>Products that support FreeMarker out-of-the-box</@ui.sectionTitle>
 
     <@ui.sectionSubtitle>IntelliJ IDEA</@ui.sectionSubtitle>
-    <ul>
+    <ul class="resource-list">
       <li>A well-known feature-rich commercial Java IDE.</li>
-      <li><a class="external-link" href="http://www.jetbrains.com/idea/" rel="nofollow">IntelliJ homepage</a></li>
+      <li><a class="icon-before external-link" href="http://www.jetbrains.com/idea/" rel="nofollow">IntelliJ homepage</a></li>
     </ul>
 
     <@ui.sectionSubtitle>jEdit</@ui.sectionSubtitle>
-    <ul>
+    <ul class="resource-list">
       <li>jEdit is a Free programmer’s text editor written in Java. It is highly customizable, extensible, and has an easy-to-use interface.</li>
-      <li><a class="external-link" href="http://www.jedit.org" rel="nofollow">jEdit homepage</a></li>
+      <li><a class="icon-before external-link" href="http://www.jedit.org" rel="nofollow">jEdit homepage</a></li>
     </ul>
 
     <@ui.sectionSubtitle>SitePad Pro</@ui.sectionSubtitle>
-    <ul>
+    <ul class="resource-list">
       <li>SitePad Pro is an Integrated Development Environment (IDE) for Java, HTML, VRML and other files. It’s commercial software.</li>
-      <li><a class="external-link" href="http://www.modelworks.com" rel="nofollow">SitePad Pro homepage</a></li>
+      <li><a class="icon-before external-link" href="http://www.modelworks.com" rel="nofollow">SitePad Pro homepage</a></li>
     </ul>
   </section>
 </@page.page>

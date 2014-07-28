@@ -78,24 +78,14 @@
           </li>
         </ul>
         <ul class="social-media-footer"><#t />
-          <li><a class="twitter" href="https://twitter.com/freemarker">Twitter</a></li><#t />
-          <li><a class="github" href="https://github.com/freemarker">Github</a></li><#t />
-          <li><a class="stack-overflow" href="https://stackoverflow.com/questions/tagged/freemarker">Stack Overflow</a></li><#t />
+          <li><a class="icon-before icon-twitter" href="https://twitter.com/freemarker">Twitter</a></li><#t />
+          <li><a class="icon-before icon-github" href="https://github.com/freemarker">Github</a></li><#t />
+          <li><a class="icon-before icon-stack-overflow" href="https://stackoverflow.com/questions/tagged/freemarker">Stack Overflow</a></li><#t />
         </ul><#t />
       </div>
 
       <p class="copyright">© 1999–${pp.now?string('YYYY')} The FreeMarker Project. All rights reserved.</p>
-      <p class="last-updated">
-        Page last generated: <time datetime="${pp.now?iso_utc}" title="${pp.now?string.full}">${pp.now}</time>
-      </div>
-      <#--
-      <div class="last-updated">
-        Page last generated: <time datetime="${pp.now?iso_utc}" title="${pp.now?string.full}">${pp.now}</time>
-      </div>
-      <div class="copyright">
-        © 1999—${pp.now?string('YYYY')} The FreeMarker Project. All rights reserved.
-      </div>
-      -->
+      <p class="last-updated">Page last generated: <time datetime="${pp.now?iso_utc}" title="${pp.now?string.full}">${pp.now}</time></p>
     </footer>
     </div>
 </#macro>

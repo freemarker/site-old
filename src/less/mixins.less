@@ -11,30 +11,3 @@
     clear: both;
   }
 }
-
-.icon-before() {
-  &:before {
-    font-family: FontAwesome;
-    margin-right: 6px;
-  }
-}
-
-.icon-after() {
-  &:after {
-    font-family: FontAwesome;
-    margin-left: 6px;
-  }
-}
-
-.social-media-icons() {
-  .icon-before();
-  &.github:before {
-    content: @fa-var-github;
-  }
-  &.twitter:before {
-    content: @fa-var-twitter;
-  }
-  &.stack-overflow:before {
-    content: @fa-var-stack-overflow;
-  }
-}

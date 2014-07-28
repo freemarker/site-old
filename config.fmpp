@@ -10,6 +10,6 @@ borders: [
   header("<#import '/templates/common.ftl' as c />", **/*.html)
 ]
 modes: [
-  copy(crossdomain.xml, robots.txt, humans.txt, /fonts/, /images/)
+  copy(crossdomain.xml, robots.txt, humans.txt, /fonts/, /images/, /download/)
   ignore(/less/, /webpages/, /templates/)
 ]

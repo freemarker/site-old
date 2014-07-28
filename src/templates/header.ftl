@@ -66,6 +66,10 @@
       "url": "editors.html",
       "key": "editors"
     }, {
+      "title": "FTL Libraries",
+      "url": "libraries.html",
+      "key": "libraries"
+    }, {
       "title": "About us",
       "url": "about-us.html",
       "key": "about-us"
