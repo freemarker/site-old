@@ -64,7 +64,11 @@
     }, {
       "title": "Editor/IDE plugins",
       "url": "editors.html",
-      "key": "plugins"
+      "key": "editors"
+    }, {
+      "title": "About us",
+      "url": "about-us.html",
+      "key": "about-us"
     }
   ]/>
 

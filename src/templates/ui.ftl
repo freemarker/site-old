@@ -17,3 +17,11 @@
 <#macro sectionTitle class="">
   <h1 class="${('section-title ' + class)?trim}"><#nested></h1>
 </#macro>
+
+
+<#---
+  @param class
+-->
+<#macro sectionSubtitle class="">
+  <h2 class="${('section-subtitle ' + class)?trim}"><#nested></h2>
+</#macro>
