@@ -54,9 +54,15 @@
       "url": "index.html",
       "key": "overview"
     }, {
-      "title": "Download Freemarker",
+      "title": "Download FreeMarker",
       "url": "download.html",
-      "key": "download"
+      "key": "download",
+      "class": "hidden-xs" <#-- show different link for non-mobile -->
+    }, {
+      "title": "Download",
+      "url": "download.html",
+      "key": "download",
+      "class": "visible-xs" <#-- show different link for mobile -->
     }, {
       "title": "Features",
       "url": "features.html",
@@ -64,7 +70,13 @@
     }, {
       "title": "Editor/IDE plugins",
       "url": "editors.html",
-      "key": "editors"
+      "key": "editors",
+      "class": "hidden-xs" <#-- show different link for non-mobile -->
+    }, {
+      "title": "Plugins",
+      "url": "editors.html",
+      "key": "editors",
+      "class": "visible-xs" <#-- show different link for mobile -->
     }, {
       "title": "FTL Libraries",
       "url": "libraries.html",
@@ -72,7 +84,13 @@
     }, {
       "title": "File generator tool (FMPP)",
       "url": "fmpp.html",
-      "key": "fmpp"
+      "key": "fmpp",
+      "class": "hidden-xs" <#-- show different link for non-mobile -->
+    }, {
+      "title": "FMPP",
+      "url": "fmpp.html",
+      "key": "fmpp",
+      "class": "visible-xs" <#-- show different link for mobile -->
     }<#--, {
       "title": "About us",
       "url": "about-us.html",
@@ -94,7 +112,14 @@
   <nav class="header-nav ${class}" role="navigation"><#t />
     <ul><#t />
       <#list links as link>
-        <li><a href="${link.url}"<#if tab == link.key> class="active"</#if>>${link.title}</a></li><#t />
+        <#local linkClass = "" />
+        <#if link.class??>
+          <#local linkClass = link.class />
+        </#if>
+        <#if tab == link.key>
+          <#local linkClass = linkClass + " active" />
+        </#if>
+        <li><a href="${link.url}"<#if linkClass?has_content> class="${linkClass}"</#if>>${link.title}</a></li><#t />
       </#list>
     </ul><#t />
   </nav><#t />
