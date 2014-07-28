@@ -70,10 +70,14 @@
       "url": "libraries.html",
       "key": "libraries"
     }, {
+      "title": "File generator tool (FMPP)",
+      "url": "fmpp.html",
+      "key": "fmpp"
+    }<#--, {
       "title": "About us",
       "url": "about-us.html",
       "key": "about-us"
-    }
+    }-->
   ]/>
 
   <@_navigation links=links tab=secondaryTab class="secondary-nav" />
